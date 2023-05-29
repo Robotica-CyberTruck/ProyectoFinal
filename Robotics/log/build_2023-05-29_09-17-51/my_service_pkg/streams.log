@@ -1,0 +1,231 @@
+[0.029s] Invoking command in '/home/yesopi/Robotics/build/my_service_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/yesopi/Robotics/src/my_service_pkg -DCMAKE_INSTALL_PREFIX=/home/yesopi/Robotics/install/my_service_pkg
+[0.329s] -- The C compiler identification is GNU 11.3.0
+[0.329s] -- The CXX compiler identification is GNU 11.3.0
+[0.329s] -- Detecting C compiler ABI info
+[0.329s] -- Detecting C compiler ABI info - done
+[0.329s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.329s] -- Detecting C compile features
+[0.329s] -- Detecting C compile features - done
+[0.330s] -- Detecting CXX compiler ABI info
+[0.330s] -- Detecting CXX compiler ABI info - done
+[0.330s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.330s] -- Detecting CXX compile features
+[0.330s] -- Detecting CXX compile features - done
+[0.330s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.506s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[0.599s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.601s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.608s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.653s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.975s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.182s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.449s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.473s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.6", minimum required is "3.6") 
+[1.475s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.502s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.6", minimum required is "3.5") 
+[1.503s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.503s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.503s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.526s] -- Found PythonExtra: .so  
+[1.562s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.580s] -- Added test 'lint_cmake' to check CMake code style
+[1.581s] -- Added test 'xmllint' to check XML markup files
+[1.584s] -- Configuring done
+[1.614s] -- Generating done
+[1.617s] -- Build files have been written to: /home/yesopi/Robotics/build/my_service_pkg
+[1.623s] Invoked command in '/home/yesopi/Robotics/build/my_service_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/yesopi/Robotics/src/my_service_pkg -DCMAKE_INSTALL_PREFIX=/home/yesopi/Robotics/install/my_service_pkg
+[1.624s] Invoking command in '/home/yesopi/Robotics/build/my_service_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yesopi/Robotics/build/my_service_pkg -- -j12 -l12
+[1.660s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.668s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.676s] [  6%] Built target ament_cmake_python_copy_my_service_pkg
+[1.952s] running egg_info
+[1.953s] creating my_service_pkg.egg-info
+[1.953s] writing my_service_pkg.egg-info/PKG-INFO
+[1.954s] writing dependency_links to my_service_pkg.egg-info/dependency_links.txt
+[1.954s] writing top-level names to my_service_pkg.egg-info/top_level.txt
+[1.954s] writing manifest file 'my_service_pkg.egg-info/SOURCES.txt'
+[1.956s] reading manifest file 'my_service_pkg.egg-info/SOURCES.txt'
+[1.957s] writing manifest file 'my_service_pkg.egg-info/SOURCES.txt'
+[1.985s] [  6%] Built target ament_cmake_python_build_my_service_pkg_egg
+[1.985s] [  6%] Built target my_service_pkg__cpp
+[1.993s] [  9%] [32mBuilding C object CMakeFiles/my_service_pkg__rosidl_generator_c.dir/rosidl_generator_c/my_service_pkg/srv/detail/set_trajectory_file__functions.c.o[0m
+[1.994s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.994s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.994s] [ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.055s] [ 22%] [32m[1mLinking C shared library libmy_service_pkg__rosidl_generator_c.so[0m
+[2.089s] [ 22%] Built target my_service_pkg__rosidl_generator_c
+[2.098s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.098s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.098s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.267s] [ 35%] [32mBuilding CXX object CMakeFiles/my_service_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_service_pkg/srv/set_trajectory_file__type_support.cpp.o[0m
+[2.294s] [ 38%] [32mBuilding CXX object CMakeFiles/my_service_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_service_pkg/srv/detail/set_trajectory_file__type_support.cpp.o[0m
+[2.307s] [ 41%] [32mBuilding CXX object CMakeFiles/my_service_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_service_pkg/srv/detail/dds_fastrtps/set_trajectory_file__type_support.cpp.o[0m
+[2.375s] [ 45%] [32mBuilding CXX object CMakeFiles/my_service_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_service_pkg/srv/set_trajectory_file__type_support.cpp.o[0m
+[2.408s] [ 48%] [32m[1mLinking CXX shared library libmy_service_pkg__rosidl_typesupport_c.so[0m
+[2.408s] [ 51%] [32mBuilding C object CMakeFiles/my_service_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_service_pkg/srv/detail/set_trajectory_file__type_support.c.o[0m
+[2.410s] [ 54%] [32mBuilding CXX object CMakeFiles/my_service_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_service_pkg/srv/detail/set_trajectory_file__type_support_c.cpp.o[0m
+[2.444s] [ 58%] [32m[1mLinking C shared library libmy_service_pkg__rosidl_typesupport_introspection_c.so[0m
+[2.450s] [ 58%] Built target my_service_pkg__rosidl_typesupport_c
+[2.472s] [ 58%] Built target my_service_pkg__rosidl_typesupport_introspection_c
+[2.579s] [ 61%] [32m[1mLinking CXX shared library libmy_service_pkg__rosidl_typesupport_cpp.so[0m
+[2.621s] [ 61%] Built target my_service_pkg__rosidl_typesupport_cpp
+[2.739s] [ 64%] [32m[1mLinking CXX shared library libmy_service_pkg__rosidl_typesupport_introspection_cpp.so[0m
+[2.788s] [ 67%] [32m[1mLinking CXX shared library libmy_service_pkg__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.802s] [ 67%] Built target my_service_pkg__rosidl_typesupport_introspection_cpp
+[2.812s] [ 70%] [32m[1mLinking CXX shared library libmy_service_pkg__rosidl_typesupport_fastrtps_c.so[0m
+[2.863s] [ 70%] Built target my_service_pkg__rosidl_typesupport_fastrtps_cpp
+[2.887s] [ 70%] Built target my_service_pkg__rosidl_typesupport_fastrtps_c
+[2.903s] [ 70%] Built target my_service_pkg
+[2.920s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.339s] [ 74%] Built target my_service_pkg__py
+[3.356s] [ 77%] [32mBuilding C object CMakeFiles/my_service_pkg__rosidl_generator_py.dir/rosidl_generator_py/my_service_pkg/srv/_set_trajectory_file_s.c.o[0m
+[3.470s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/my_service_pkg/libmy_service_pkg__rosidl_generator_py.so[0m
+[3.507s] [ 80%] Built target my_service_pkg__rosidl_generator_py
+[3.524s] [ 90%] [32mBuilding C object CMakeFiles/my_service_pkg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_service_pkg/_my_service_pkg_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.525s] [ 90%] [32mBuilding C object CMakeFiles/my_service_pkg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_service_pkg/_my_service_pkg_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.525s] [ 90%] [32mBuilding C object CMakeFiles/my_service_pkg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_service_pkg/_my_service_pkg_s.ep.rosidl_typesupport_c.c.o[0m
+[3.627s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/my_service_pkg/my_service_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.632s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/my_service_pkg/my_service_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.635s] [100%] [32m[1mLinking C shared library rosidl_generator_py/my_service_pkg/my_service_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.659s] [100%] Built target my_service_pkg__rosidl_typesupport_c__pyext
+[3.664s] [100%] Built target my_service_pkg__rosidl_typesupport_introspection_c__pyext
+[3.668s] [100%] Built target my_service_pkg__rosidl_typesupport_fastrtps_c__pyext
+[3.678s] Invoked command in '/home/yesopi/Robotics/build/my_service_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yesopi/Robotics/build/my_service_pkg -- -j12 -l12
+[3.731s] Invoking command in '/home/yesopi/Robotics/build/my_service_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/yesopi/Robotics/build/my_service_pkg
+[3.740s] -- Install configuration: ""
+[3.740s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/ament_index/resource_index/rosidl_interfaces/my_service_pkg
+[3.740s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg
+[3.741s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv
+[3.741s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail
+[3.741s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__functions.c
+[3.741s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__functions.h
+[3.741s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__struct.h
+[3.741s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__type_support.h
+[3.741s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/set_trajectory_file.h
+[3.741s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/msg
+[3.741s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/msg/rosidl_generator_c__visibility_control.h
+[3.742s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/environment/library_path.sh
+[3.742s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/environment/library_path.dsv
+[3.742s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_generator_c.so
+[3.742s] -- Set runtime path of "/home/yesopi/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_generator_c.so" to ""
+[3.742s] -- Up-to-date: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg
+[3.742s] -- Up-to-date: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv
+[3.742s] -- Up-to-date: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail
+[3.742s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__rosidl_typesupport_fastrtps_c.h
+[3.743s] -- Up-to-date: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/msg
+[3.743s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.743s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_typesupport_fastrtps_c.so
+[3.743s] -- Set runtime path of "/home/yesopi/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_typesupport_fastrtps_c.so" to ""
+[3.743s] -- Up-to-date: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg
+[3.743s] -- Up-to-date: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv
+[3.743s] -- Up-to-date: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail
+[3.743s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__rosidl_typesupport_introspection_c.h
+[3.743s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__type_support.c
+[3.743s] -- Up-to-date: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/msg
+[3.743s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.744s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_typesupport_introspection_c.so
+[3.744s] -- Set runtime path of "/home/yesopi/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_typesupport_introspection_c.so" to ""
+[3.744s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_typesupport_c.so
+[3.744s] -- Set runtime path of "/home/yesopi/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_typesupport_c.so" to ""
+[3.744s] -- Up-to-date: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg
+[3.744s] -- Up-to-date: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv
+[3.744s] -- Up-to-date: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail
+[3.744s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__builder.hpp
+[3.744s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__struct.hpp
+[3.745s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__traits.hpp
+[3.745s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/set_trajectory_file.hpp
+[3.745s] -- Up-to-date: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg
+[3.745s] -- Up-to-date: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv
+[3.745s] -- Up-to-date: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail
+[3.745s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/dds_fastrtps
+[3.745s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__rosidl_typesupport_fastrtps_cpp.hpp
+[3.745s] -- Up-to-date: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/msg
+[3.745s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.745s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_typesupport_fastrtps_cpp.so
+[3.745s] -- Set runtime path of "/home/yesopi/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.746s] -- Up-to-date: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg
+[3.746s] -- Up-to-date: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv
+[3.746s] -- Up-to-date: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail
+[3.746s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__type_support.cpp
+[3.746s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__rosidl_typesupport_introspection_cpp.hpp
+[3.746s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_typesupport_introspection_cpp.so
+[3.746s] -- Set runtime path of "/home/yesopi/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_typesupport_introspection_cpp.so" to ""
+[3.746s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_typesupport_cpp.so
+[3.746s] -- Set runtime path of "/home/yesopi/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_typesupport_cpp.so" to ""
+[3.746s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/environment/pythonpath.sh
+[3.746s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/environment/pythonpath.dsv
+[3.747s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg-0.0.0-py3.10.egg-info
+[3.747s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg-0.0.0-py3.10.egg-info/top_level.txt
+[3.747s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.747s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg-0.0.0-py3.10.egg-info/PKG-INFO
+[3.747s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.747s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg
+[3.747s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/_my_service_pkg_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.747s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/my_service_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.747s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/__init__.py
+[3.748s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/srv
+[3.748s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/srv/__init__.py
+[3.748s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/srv/_set_trajectory_file_s.c
+[3.748s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/srv/_set_trajectory_file.py
+[3.748s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/my_service_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.748s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/_my_service_pkg_s.ep.rosidl_typesupport_c.c
+[3.748s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/_my_service_pkg_s.ep.rosidl_typesupport_introspection_c.c
+[3.748s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/my_service_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.748s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/libmy_service_pkg__rosidl_generator_py.so
+[3.786s] Listing '/home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg'...
+[3.786s] Compiling '/home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/__init__.py'...
+[3.786s] Listing '/home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/srv'...
+[3.786s] Compiling '/home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/srv/__init__.py'...
+[3.786s] Compiling '/home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/srv/_set_trajectory_file.py'...
+[3.791s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/my_service_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.791s] -- Set runtime path of "/home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/my_service_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.791s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/my_service_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.792s] -- Set runtime path of "/home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/my_service_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.792s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/my_service_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.792s] -- Set runtime path of "/home/yesopi/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/my_service_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.792s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_generator_py.so
+[3.793s] -- Set runtime path of "/home/yesopi/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_generator_py.so" to ""
+[3.793s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/srv/SetTrajectoryFile.idl
+[3.793s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/srv/SetTrajectoryFile.srv
+[3.793s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/srv/SetTrajectoryFile_Request.msg
+[3.793s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/srv/SetTrajectoryFile_Response.msg
+[3.793s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/ament_index/resource_index/package_run_dependencies/my_service_pkg
+[3.793s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/ament_index/resource_index/parent_prefix_path/my_service_pkg
+[3.793s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/environment/ament_prefix_path.sh
+[3.794s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/environment/ament_prefix_path.dsv
+[3.794s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/environment/path.sh
+[3.794s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/environment/path.dsv
+[3.794s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/local_setup.bash
+[3.794s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/local_setup.sh
+[3.794s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/local_setup.zsh
+[3.794s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/local_setup.dsv
+[3.794s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/package.dsv
+[3.795s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/ament_index/resource_index/packages/my_service_pkg
+[3.795s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/export_my_service_pkg__rosidl_generator_cExport.cmake
+[3.795s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/export_my_service_pkg__rosidl_generator_cExport-noconfig.cmake
+[3.795s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/export_my_service_pkg__rosidl_typesupport_fastrtps_cExport.cmake
+[3.795s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/export_my_service_pkg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.795s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/my_service_pkg__rosidl_typesupport_introspection_cExport.cmake
+[3.795s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/my_service_pkg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.796s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/my_service_pkg__rosidl_typesupport_cExport.cmake
+[3.796s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/my_service_pkg__rosidl_typesupport_cExport-noconfig.cmake
+[3.796s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/export_my_service_pkg__rosidl_generator_cppExport.cmake
+[3.796s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/export_my_service_pkg__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.796s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/export_my_service_pkg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.796s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/my_service_pkg__rosidl_typesupport_introspection_cppExport.cmake
+[3.796s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/my_service_pkg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.797s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/my_service_pkg__rosidl_typesupport_cppExport.cmake
+[3.797s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/my_service_pkg__rosidl_typesupport_cppExport-noconfig.cmake
+[3.797s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/export_my_service_pkg__rosidl_generator_pyExport.cmake
+[3.797s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/export_my_service_pkg__rosidl_generator_pyExport-noconfig.cmake
+[3.797s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/rosidl_cmake-extras.cmake
+[3.797s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.797s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/ament_cmake_export_libraries-extras.cmake
+[3.797s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/ament_cmake_export_targets-extras.cmake
+[3.798s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.798s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.798s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.798s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/my_service_pkgConfig.cmake
+[3.798s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/my_service_pkgConfig-version.cmake
+[3.798s] -- Installing: /home/yesopi/Robotics/install/my_service_pkg/share/my_service_pkg/package.xml
+[3.803s] Invoked command in '/home/yesopi/Robotics/build/my_service_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/yesopi/Robotics/build/my_service_pkg

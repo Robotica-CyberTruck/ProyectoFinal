@@ -1,0 +1,36 @@
+running egg_info
+creating ../../build/tesla/tesla.egg-info
+writing ../../build/tesla/tesla.egg-info/PKG-INFO
+writing dependency_links to ../../build/tesla/tesla.egg-info/dependency_links.txt
+writing entry points to ../../build/tesla/tesla.egg-info/entry_points.txt
+writing requirements to ../../build/tesla/tesla.egg-info/requires.txt
+writing top-level names to ../../build/tesla/tesla.egg-info/top_level.txt
+writing manifest file '../../build/tesla/tesla.egg-info/SOURCES.txt'
+reading manifest file '../../build/tesla/tesla.egg-info/SOURCES.txt'
+writing manifest file '../../build/tesla/tesla.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/yesopi/Robotics/build/tesla/build
+creating /home/yesopi/Robotics/build/tesla/build/lib
+creating /home/yesopi/Robotics/build/tesla/build/lib/tesla
+copying tesla/__init__.py -> /home/yesopi/Robotics/build/tesla/build/lib/tesla
+running install
+running install_lib
+creating /home/yesopi/Robotics/install/tesla/lib/python3.10/site-packages/tesla
+copying /home/yesopi/Robotics/build/tesla/build/lib/tesla/__init__.py -> /home/yesopi/Robotics/install/tesla/lib/python3.10/site-packages/tesla
+byte-compiling /home/yesopi/Robotics/install/tesla/lib/python3.10/site-packages/tesla/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/yesopi/Robotics/install/tesla/share/ament_index
+creating /home/yesopi/Robotics/install/tesla/share/ament_index/resource_index
+creating /home/yesopi/Robotics/install/tesla/share/ament_index/resource_index/packages
+copying resource/tesla -> /home/yesopi/Robotics/install/tesla/share/ament_index/resource_index/packages
+copying package.xml -> /home/yesopi/Robotics/install/tesla/share/tesla
+running install_egg_info
+Copying ../../build/tesla/tesla.egg-info to /home/yesopi/Robotics/install/tesla/lib/python3.10/site-packages/tesla-0.0.0-py3.10.egg-info
+running install_scripts
+Installing esp32 script to /home/yesopi/Robotics/install/tesla/lib/tesla
+Installing interfaz script to /home/yesopi/Robotics/install/tesla/lib/tesla
+Installing player script to /home/yesopi/Robotics/install/tesla/lib/tesla
+Installing serial script to /home/yesopi/Robotics/install/tesla/lib/tesla
+Installing teclado script to /home/yesopi/Robotics/install/tesla/lib/tesla
+writing list of installed files to '/home/yesopi/Robotics/build/tesla/install.log'

@@ -1,0 +1,27 @@
+[0.694s] Invoking command in '/home/yesopi/Robotics/src/tesla': PYTHONPATH=/home/yesopi/Robotics/build/tesla/prefix_override:/home/yesopi/Robotics/install/tesla/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tesla build --build-base /home/yesopi/Robotics/build/tesla/build install --record /home/yesopi/Robotics/build/tesla/install.log --single-version-externally-managed
+[0.969s] running egg_info
+[0.970s] writing ../../build/tesla/tesla.egg-info/PKG-INFO
+[0.970s] writing dependency_links to ../../build/tesla/tesla.egg-info/dependency_links.txt
+[0.970s] writing entry points to ../../build/tesla/tesla.egg-info/entry_points.txt
+[0.971s] writing requirements to ../../build/tesla/tesla.egg-info/requires.txt
+[0.971s] writing top-level names to ../../build/tesla/tesla.egg-info/top_level.txt
+[0.973s] reading manifest file '../../build/tesla/tesla.egg-info/SOURCES.txt'
+[0.974s] writing manifest file '../../build/tesla/tesla.egg-info/SOURCES.txt'
+[0.974s] running build
+[0.974s] running build_py
+[0.974s] running install
+[0.974s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.974s]   warnings.warn(
+[0.975s] running install_lib
+[0.976s] running install_data
+[0.976s] running install_egg_info
+[0.978s] removing '/home/yesopi/Robotics/install/tesla/lib/python3.10/site-packages/tesla-0.0.0-py3.10.egg-info' (and everything under it)
+[0.978s] Copying ../../build/tesla/tesla.egg-info to /home/yesopi/Robotics/install/tesla/lib/python3.10/site-packages/tesla-0.0.0-py3.10.egg-info
+[0.979s] running install_scripts
+[1.003s] Installing esp32 script to /home/yesopi/Robotics/install/tesla/lib/tesla
+[1.003s] Installing interfaz script to /home/yesopi/Robotics/install/tesla/lib/tesla
+[1.003s] Installing player script to /home/yesopi/Robotics/install/tesla/lib/tesla
+[1.003s] Installing serial script to /home/yesopi/Robotics/install/tesla/lib/tesla
+[1.003s] Installing teclado script to /home/yesopi/Robotics/install/tesla/lib/tesla
+[1.003s] writing list of installed files to '/home/yesopi/Robotics/build/tesla/install.log'
+[1.027s] Invoked command in '/home/yesopi/Robotics/src/tesla' returned '0': PYTHONPATH=/home/yesopi/Robotics/build/tesla/prefix_override:/home/yesopi/Robotics/install/tesla/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tesla build --build-base /home/yesopi/Robotics/build/tesla/build install --record /home/yesopi/Robotics/build/tesla/install.log --single-version-externally-managed

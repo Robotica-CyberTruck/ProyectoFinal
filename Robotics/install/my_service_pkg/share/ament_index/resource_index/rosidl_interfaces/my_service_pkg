@@ -1,0 +1,4 @@
+srv/SetTrajectoryFile.idl
+srv/SetTrajectoryFile.srv
+srv/SetTrajectoryFile_Request.msg
+srv/SetTrajectoryFile_Response.msg

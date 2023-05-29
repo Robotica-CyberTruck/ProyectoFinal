@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/robot_manipulator/robot_manipulator.egg-info/PKG-INFO
+../../build/robot_manipulator/robot_manipulator.egg-info/SOURCES.txt
+../../build/robot_manipulator/robot_manipulator.egg-info/dependency_links.txt
+../../build/robot_manipulator/robot_manipulator.egg-info/entry_points.txt
+../../build/robot_manipulator/robot_manipulator.egg-info/requires.txt
+../../build/robot_manipulator/robot_manipulator.egg-info/top_level.txt
+../../build/robot_manipulator/robot_manipulator.egg-info/zip-safe
+resource/robot_manipulator
+robot_manipulator/__init__.py
+robot_manipulator/robot_manipulator_interface_node.py
+robot_manipulator/test_position_publisher_node.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

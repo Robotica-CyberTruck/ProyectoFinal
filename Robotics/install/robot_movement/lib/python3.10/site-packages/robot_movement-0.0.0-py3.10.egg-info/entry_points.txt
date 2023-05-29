@@ -1,0 +1,7 @@
+[console_scripts]
+esp32 = robot_movement.esp32:main
+interfaz = robot_movement.robot_interface:main
+player = robot_movement.robot_player:main
+serial = robot_movement.serialtest:main
+teclado = robot_movement.robot_teleop:main
+

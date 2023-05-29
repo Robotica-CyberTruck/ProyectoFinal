@@ -1,0 +1,58 @@
+[0.989s] Invoking command in '/home/yesopi/Robotics/src/robot_movement': PYTHONPATH=/home/yesopi/Robotics/build/robot_movement/prefix_override:/home/yesopi/Robotics/install/robot_movement/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot_movement build --build-base /home/yesopi/Robotics/build/robot_movement/build install --record /home/yesopi/Robotics/build/robot_movement/install.log --single-version-externally-managed
+[1.261s] running egg_info
+[1.262s] creating ../../build/robot_movement/robot_movement.egg-info
+[1.262s] writing ../../build/robot_movement/robot_movement.egg-info/PKG-INFO
+[1.263s] writing dependency_links to ../../build/robot_movement/robot_movement.egg-info/dependency_links.txt
+[1.263s] writing entry points to ../../build/robot_movement/robot_movement.egg-info/entry_points.txt
+[1.263s] writing requirements to ../../build/robot_movement/robot_movement.egg-info/requires.txt
+[1.264s] writing top-level names to ../../build/robot_movement/robot_movement.egg-info/top_level.txt
+[1.265s] writing manifest file '../../build/robot_movement/robot_movement.egg-info/SOURCES.txt'
+[1.265s] reading manifest file '../../build/robot_movement/robot_movement.egg-info/SOURCES.txt'
+[1.266s] writing manifest file '../../build/robot_movement/robot_movement.egg-info/SOURCES.txt'
+[1.266s] running build
+[1.266s] running build_py
+[1.266s] creating /home/yesopi/Robotics/build/robot_movement/build
+[1.267s] creating /home/yesopi/Robotics/build/robot_movement/build/lib
+[1.267s] creating /home/yesopi/Robotics/build/robot_movement/build/lib/robot_movement
+[1.267s] copying robot_movement/serialviewer.py -> /home/yesopi/Robotics/build/robot_movement/build/lib/robot_movement
+[1.267s] copying robot_movement/esp32.py -> /home/yesopi/Robotics/build/robot_movement/build/lib/robot_movement
+[1.267s] copying robot_movement/__init__.py -> /home/yesopi/Robotics/build/robot_movement/build/lib/robot_movement
+[1.267s] copying robot_movement/robot_teleop.py -> /home/yesopi/Robotics/build/robot_movement/build/lib/robot_movement
+[1.267s] copying robot_movement/robot_interface.py -> /home/yesopi/Robotics/build/robot_movement/build/lib/robot_movement
+[1.267s] copying robot_movement/serialtest.py -> /home/yesopi/Robotics/build/robot_movement/build/lib/robot_movement
+[1.267s] copying robot_movement/robot_player.py -> /home/yesopi/Robotics/build/robot_movement/build/lib/robot_movement
+[1.268s] running install
+[1.268s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.268s]   warnings.warn(
+[1.268s] running install_lib
+[1.269s] creating /home/yesopi/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement
+[1.269s] copying /home/yesopi/Robotics/build/robot_movement/build/lib/robot_movement/serialviewer.py -> /home/yesopi/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement
+[1.269s] copying /home/yesopi/Robotics/build/robot_movement/build/lib/robot_movement/esp32.py -> /home/yesopi/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement
+[1.269s] copying /home/yesopi/Robotics/build/robot_movement/build/lib/robot_movement/__init__.py -> /home/yesopi/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement
+[1.269s] copying /home/yesopi/Robotics/build/robot_movement/build/lib/robot_movement/robot_teleop.py -> /home/yesopi/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement
+[1.269s] copying /home/yesopi/Robotics/build/robot_movement/build/lib/robot_movement/robot_interface.py -> /home/yesopi/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement
+[1.269s] copying /home/yesopi/Robotics/build/robot_movement/build/lib/robot_movement/serialtest.py -> /home/yesopi/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement
+[1.269s] copying /home/yesopi/Robotics/build/robot_movement/build/lib/robot_movement/robot_player.py -> /home/yesopi/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement
+[1.270s] byte-compiling /home/yesopi/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement/serialviewer.py to serialviewer.cpython-310.pyc
+[1.271s] byte-compiling /home/yesopi/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement/esp32.py to esp32.cpython-310.pyc
+[1.271s] byte-compiling /home/yesopi/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement/__init__.py to __init__.cpython-310.pyc
+[1.271s] byte-compiling /home/yesopi/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement/robot_teleop.py to robot_teleop.cpython-310.pyc
+[1.273s] byte-compiling /home/yesopi/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement/robot_interface.py to robot_interface.cpython-310.pyc
+[1.275s] byte-compiling /home/yesopi/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement/serialtest.py to serialtest.cpython-310.pyc
+[1.276s] byte-compiling /home/yesopi/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement/robot_player.py to robot_player.cpython-310.pyc
+[1.276s] running install_data
+[1.277s] creating /home/yesopi/Robotics/install/robot_movement/share/ament_index
+[1.277s] creating /home/yesopi/Robotics/install/robot_movement/share/ament_index/resource_index
+[1.277s] creating /home/yesopi/Robotics/install/robot_movement/share/ament_index/resource_index/packages
+[1.277s] copying resource/robot_movement -> /home/yesopi/Robotics/install/robot_movement/share/ament_index/resource_index/packages
+[1.277s] copying package.xml -> /home/yesopi/Robotics/install/robot_movement/share/robot_movement
+[1.277s] running install_egg_info
+[1.279s] Copying ../../build/robot_movement/robot_movement.egg-info to /home/yesopi/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement-0.0.0-py3.10.egg-info
+[1.280s] running install_scripts
+[1.304s] Installing esp32 script to /home/yesopi/Robotics/install/robot_movement/lib/robot_movement
+[1.304s] Installing interfaz script to /home/yesopi/Robotics/install/robot_movement/lib/robot_movement
+[1.304s] Installing player script to /home/yesopi/Robotics/install/robot_movement/lib/robot_movement
+[1.304s] Installing serial script to /home/yesopi/Robotics/install/robot_movement/lib/robot_movement
+[1.305s] Installing teclado script to /home/yesopi/Robotics/install/robot_movement/lib/robot_movement
+[1.305s] writing list of installed files to '/home/yesopi/Robotics/build/robot_movement/install.log'
+[1.341s] Invoked command in '/home/yesopi/Robotics/src/robot_movement' returned '0': PYTHONPATH=/home/yesopi/Robotics/build/robot_movement/prefix_override:/home/yesopi/Robotics/install/robot_movement/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot_movement build --build-base /home/yesopi/Robotics/build/robot_movement/build install --record /home/yesopi/Robotics/build/robot_movement/install.log --single-version-externally-managed

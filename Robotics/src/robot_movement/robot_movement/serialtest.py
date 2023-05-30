@@ -31,67 +31,25 @@ class SerialTester(Node):
         self.contador += 1  # Incrementa el contador
         start_time = time.time()  # Guarda el tiempo actual
 
-        linearx = msg.linear.x  # Mueve la declaración de linearx aquí
-        lineary = msg.linear.y  # Mueve la declaración de lineary aquí
         #############
         response_msg = String()
         response_msg.data = self.serial.readline().decode('utf-8').strip()
         self.pub.publish(response_msg)
         ############
         if msg.linear.x > 0:
+            self.serial.write(b'w')
             print("w")
-            message="w"+str(linearx)
-            self.serial.write(message.encode())
-
-            # Lee la respuesta de la ESP32
-            response = self.serial.readline().decode('utf-8').strip()
-            elapsed_time = time.time() - start_time  # Calcula el tiempo transcurrido
-            print("Tiempo de respuesta: {:.2f} segundos".format(elapsed_time))
-            print("Respuesta de ESP32: {}".format(response))
-            print("Respuesta de ESP32: {}".format(response))
         elif msg.linear.x < 0:
-            message="s"+str(linearx)
-            self.serial.write(message.encode())
+            self.serial.write(b's')
             print("s")
-            # Lee la respuesta de la ESP32
-            response = self.serial.readline().decode('utf-8').strip()
-            elapsed_time = time.time() - start_time  # Calcula el tiempo transcurrido
-            print("Tiempo de respuesta: {:.2f} segundos".format(elapsed_time))
-            print("Respuesta de ESP32: {}".format(response))
-            print("Respuesta de ESP32: {}".format(response))
         elif msg.linear.y < 0:
-            message="a"+str(lineary)
-            self.serial.write(message.encode())
+            self.serial.write(b'a')
             print("a")
-            # Lee la respuesta de la ESP32
-            response = self.serial.readline().decode('utf-8').strip()
-            elapsed_time = time.time() - start_time  # Calcula el tiempo transcurrido
-            print("Tiempo de respuesta: {:.2f} segundos".format(elapsed_time))
-            print("Respuesta de ESP32: {}".format(response))
-            print("Respuesta de ESP32: {}".format(response))
         elif msg.linear.y > 0:
-            message="d"+str(lineary)
-            self.serial.write(message.encode())
+            self.serial.write(b'd')
             print("d")
-            # Lee la respuesta de la ESP32
-            response = self.serial.readline().decode('utf-8').strip()
-            elapsed_time = time.time() - start_time  # Calcula el tiempo transcurrido
-            print("Tiempo de respuesta: {:.2f} segundos".format(elapsed_time))
-            print("Respuesta de ESP32: {}".format(response))
-            print("Respuesta de ESP32: {}".format(response))
         else:
-            message="n"+str("0.0")
-            self.serial.write(message.encode())
-
-            # Lee la respuesta de la ESP32
-            response = self.serial.readline().decode('utf-8').strip()
-            elapsed_time = time.time() - start_time  # Calcula el tiempo transcurrido
-            print("Tiempo de respuesta: {:.2f} segundos".format(elapsed_time))
-            print("Respuesta de ESP32: {}".format(response))
-            print("Respuesta de ESP32: {}".format(response))
-
-
-    # ...
+            self.serial.write(b'n')
 
 
 def main(args=None):

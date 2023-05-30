@@ -47,45 +47,45 @@ void loop()
     char c = Serial.read();
     if (c == 'a') {
       if (!enMovimiento1) {
-        angulo1 = min(360, ultimoAngulo1 + 10);
+        angulo1 = min(360, ultimoAngulo1 + 20);
         posicionRequerida1 = true; // Marca la posición requerida
       }
     } else if (c == 'd') {
       if (!enMovimiento1) {
-        angulo1 = max(0, ultimoAngulo1 - 10);
+        angulo1 = max(0, ultimoAngulo1 - 20);
         posicionRequerida1 = true; // Marca la posición requerida
       }
     } else if (c == 'w') {
       if (!enMovimiento2) {
-        angulo2 = min(360, ultimoAngulo2 + 10);
+        angulo2 = min(360, ultimoAngulo2 + 20);
         posicionRequerida2 = true; // Marca la posición requerida
       }
     } else if (c == 's') {
       if (!enMovimiento2) {
-        angulo2 = max(0, ultimoAngulo2 - 10);
+        angulo2 = max(0, ultimoAngulo2 - 20);
         posicionRequerida2 = true; // Marca la posición requerida
       }
     }
     else if (c == 'q') {
       if (!enMovimiento3) {
-        angulo3 = min(360, ultimoAngulo3 + 10);
+        angulo3 = min(360, ultimoAngulo3 + 20);
         posicionRequerida3 = true; // Marca la posición requerida
       }
     } else if (c == 'e') {
       if (!enMovimiento3) {
-        angulo3 = max(0, ultimoAngulo3 - 10);
+        angulo3 = max(0, ultimoAngulo3 - 20);
         posicionRequerida3 = true; // Marca la posición requerida
       }
     }
 
     else if (c == 'z') {
       if (!enMovimiento4) {
-        angulo4 = min(360, ultimoAngulo4 + 10);
+        angulo4 = min(360, ultimoAngulo4 + 20);
         posicionRequerida4 = true; // Marca la posición requerida
       }
     } else if (c == 'x') {
       if (!enMovimiento4) {
-        angulo4 = max(0, ultimoAngulo4 - 10);
+        angulo4 = max(0, ultimoAngulo4 - 20);
         posicionRequerida4 = true; // Marca la posición requerida
       }
     }
@@ -93,11 +93,11 @@ void loop()
   
   if (posicionRequerida1) { // Si hay una posición requerida para el motor 1
   if (ultimoAngulo1 < angulo1) { // Si el motor 1 tiene que moverse en una dirección
-    servo1.write(ultimoAngulo1 + 10); // Mueve el motor 1 10 grados
+    servo1.write(ultimoAngulo1 + 20); // Mueve el motor 1 10 grados
     ultimoAngulo1 += 10;
   } else if (ultimoAngulo1 > angulo1) { // Si el motor 1 tiene que moverse en la dirección opuesta
-    servo1.write(ultimoAngulo1 - 10); // Mueve el motor 1 10 grados
-    ultimoAngulo1 -= 10;
+    servo1.write(ultimoAngulo1 - 20); // Mueve el motor 1 10 grados
+    ultimoAngulo1 -= 20;
   } else { // Si se ha llegado a la posición requerida para el motor 1
     enMovimiento1 = false; // Detiene el movimiento del motor 1
     posicionRequerida1 = false; // Reinicia la variable
@@ -117,11 +117,11 @@ void loop()
 
 if (posicionRequerida2) { // Si hay una posición requerida para el motor 2
   if (ultimoAngulo2 < angulo2) { // Si el motor 2 tiene que moverse en una dirección
-    servo2.write(ultimoAngulo2 + 10); // Mueve el motor 2 10 grados
-    ultimoAngulo2 += 10;
+    servo2.write(ultimoAngulo2 + 20); // Mueve el motor 2 10 grados
+    ultimoAngulo2 += 20;
   } else if (ultimoAngulo2 > angulo2) { // Si el motor 2 tiene que moverse en la dirección opuesta
-    servo2.write(ultimoAngulo2 - 10); // Mueve el motor 2 10 grados
-    ultimoAngulo2 -= 10;
+    servo2.write(ultimoAngulo2 - 20); // Mueve el motor 2 10 grados
+    ultimoAngulo2 -= 20;
   } else { // Si se ha llegado a la posición requerida para el motor 2
     enMovimiento2 = false; // Detiene el movimiento del motor 2
     posicionRequerida2 = false; // Reinicia la variable
@@ -142,11 +142,11 @@ else {
 
 if (posicionRequerida3) { // Si hay una posición requerida para el motor 3
   if (ultimoAngulo3 < angulo3) { // Si el motor 3 tiene que moverse en una dirección
-    servo3.write(ultimoAngulo3 + 10); // Mueve el motor 2 10 grados
-    ultimoAngulo3 += 10;
+    servo3.write(ultimoAngulo3 + 20); // Mueve el motor 2 10 grados
+    ultimoAngulo3 += 20;
   } else if (ultimoAngulo3 > angulo3) { // Si el motor 3 tiene que moverse en la dirección opuesta
-    servo3.write(ultimoAngulo3 - 10); // Mueve el motor 3 10 grados
-    ultimoAngulo3 -= 10;
+    servo3.write(ultimoAngulo3 - 20); // Mueve el motor 3 10 grados
+    ultimoAngulo3 -= 20;
   } else { // Si se ha llegado a la posición requerida para el motor 3
     enMovimiento3 = false; // Detiene el movimiento del motor 3
     posicionRequerida3 = false; // Reinicia la variable
@@ -167,11 +167,11 @@ else {
 
 if (posicionRequerida4) { // Si hay una posición requerida para el motor 3
   if (ultimoAngulo4 < angulo4) { // Si el motor 3 tiene que moverse en una dirección
-    servo4.write(ultimoAngulo4 + 10); // Mueve el motor 2 10 grados
-    ultimoAngulo4 += 10;
+    servo4.write(ultimoAngulo4 + 20); // Mueve el motor 2 10 grados
+    ultimoAngulo4 += 20;
   } else if (ultimoAngulo4 > angulo4) { // Si el motor 3 tiene que moverse en la dirección opuesta
-    servo4.write(ultimoAngulo4 - 10); // Mueve el motor 3 10 grados
-    ultimoAngulo4 -= 10;
+    servo4.write(ultimoAngulo4 - 20); // Mueve el motor 3 10 grados
+    ultimoAngulo4 -= 20;
   } else { // Si se ha llegado a la posición requerida para el motor 3
     enMovimiento4 = false; // Detiene el movimiento del motor 3
     posicionRequerida4 = false; // Reinicia la variable

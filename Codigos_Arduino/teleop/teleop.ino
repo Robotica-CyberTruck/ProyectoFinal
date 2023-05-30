@@ -38,8 +38,9 @@ pinMode(motor4EnablePin, OUTPUT);
 pinMode(motor4In1Pin, OUTPUT);
 pinMode(motor4In2Pin, OUTPUT);
 
+VaciarBuffer();
 // Iniciar la comunicación serial
-Serial.begin(115200);
+Serial.begin(9600);
 }
 //funciones de movimiento
 void MoverAdelante(){
@@ -65,6 +66,7 @@ void MoverAdelante(){
   analogWrite(motorEnablePin, 0);
   analogWrite(motor3EnablePin, 0);
   analogWrite(motor4EnablePin, 0);
+  Serial.println("Detenerse2222222222222222222");
 }
 void MoverAtras(){
 
@@ -89,6 +91,7 @@ void MoverAtras(){
   analogWrite(motorEnablePin, 0);
   analogWrite(motor3EnablePin, 0);
   analogWrite(motor4EnablePin, 0);
+
 }
 //Giro con tecnica de pivoteo
 void GirarIzq(){
@@ -140,35 +143,53 @@ void GirarDer(){
   analogWrite(motor3EnablePin, 0);
   analogWrite(motor4EnablePin, 0);
 }
+void VaciarBuffer(){
+  while (Serial.available()>0){
+    Serial.read();
+  }
+}
+int data = -1;  // Variable global para guardar el último comando recibido
+
 void loop() {
-// Leer los datos desde el puerto serie
-if (Serial.available() > 0) {
-char data = Serial.read();
-if (data == 'w') {
-Serial.println("siuuu");
-// Si se recibe "w", establecer la velocidad máxima y la dirección hacia adelante
-  MoverAdelante();
+  Serial.println(data);
+  // Leer los datos desde el puerto serie solo si hay datos disponibles
+  if (Serial.available() > 0) {
+    data = Serial.parseInt();  // Guardar el último comando
+    VaciarBuffer();
+  }
 
-}
-if (data == 's') {
 
-// Si se recibe "w", establecer la velocidad máxima y la dirección hacia adelante
-MoverAtras();
-}
-if (data == 'a') {
+  if (data ==1){
+    Serial.println(data);
 
-// Si se recibe "w", establecer la velocidad máxima y la dirección hacia adelante
-GirarIzq();
+    while(data ==1){
+      MoverAdelante();
+      if (Serial.available() > 0) {
+      data = Serial.parseInt(); // Guardar el último comando
+      VaciarBuffer();
+      }
+    }
 
-}
-if (data == 'd') {
+  }
+  
+  /*
+  // Ejecutar acciones basándose en el último comando recibido
+  if (data == 'w') {
+    data='w';
+    Serial.println("moviendo hacia adelante");
+    MoverAdelante();
+    Serial.println("Detenerse");
+  } else if (data == 's') {
+    MoverAtras();
+    Serial.println("moviendo hacia atras");
+  } else if (data == 'a') {
+    GirarIzq();
+    Serial.println("Girando a la izquierda");
+  } else if (data == 'd') {
+    Serial.println("Girando a la derecha");
+    GirarDer();
 
-// Si se recibe "w", establecer la velocidad máxima y la dirección hacia adelante
-GirarDer();
-}
-else {
-// Si se recibe otro valor, detener el motor
-analogWrite(motorEnablePin, 0);
-}
-}
+  } 
+  Serial.println(data);*/
+
 }

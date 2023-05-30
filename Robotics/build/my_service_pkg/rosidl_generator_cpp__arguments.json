@@ -1,9 +1,9 @@
 {
   "package_name": "my_service_pkg",
-  "output_dir": "/home/yesopi/Robotics/build/my_service_pkg/rosidl_generator_cpp/my_service_pkg",
+  "output_dir": "/home/yesopi/ProyectoFinal/Robotics/build/my_service_pkg/rosidl_generator_cpp/my_service_pkg",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/home/yesopi/Robotics/build/my_service_pkg/rosidl_adapter/my_service_pkg:srv/SetTrajectoryFile.idl"
+    "/home/yesopi/ProyectoFinal/Robotics/build/my_service_pkg/rosidl_adapter/my_service_pkg:srv/SetTrajectoryFile.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp",
@@ -21,6 +21,6 @@
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
-    "/home/yesopi/Robotics/build/my_service_pkg/rosidl_adapter/my_service_pkg/srv/SetTrajectoryFile.idl"
+    "/home/yesopi/ProyectoFinal/Robotics/build/my_service_pkg/rosidl_adapter/my_service_pkg/srv/SetTrajectoryFile.idl"
   ]
 }

@@ -1,8 +1,8 @@
-# Install script for directory: /home/yesopi/Robotics/build/my_service_pkg/my_service_pkg__py
+# Install script for directory: /home/yesopi/ProyectoFinal/Robotics/build/my_service_pkg/my_service_pkg__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yesopi/Robotics/install/my_service_pkg")
+  set(CMAKE_INSTALL_PREFIX "/home/yesopi/ProyectoFinal/Robotics/install/my_service_pkg")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

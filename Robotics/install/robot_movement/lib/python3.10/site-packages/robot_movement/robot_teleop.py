@@ -22,6 +22,9 @@ class Publicador(Node):
         self.i = 0
         self.movement = Twist()
         self.presionado=False
+        #por defecto la velocidades son 1 
+        self.angular_value = 1.0
+        self.linear_value = 1.0
 
         # Crear ventana de tkinter para la interfaz de movimiento
         self.root = tk.Tk()
@@ -65,19 +68,7 @@ class Publicador(Node):
         self.s_button.grid(row=1, column=1)
         self.d_button.grid(row=1, column=2)
                              
-        # Crear campos de entrada para las velocidades lineal y angular
-        self.angular_label = tk.Label(self.root, text="Velocidad angular (rad/s):",bg='#191970',  fg='white', font=('Arial', 16))
-        self.angular_label.pack()
-        self.angular_entry = tk.Entry(self.root)
-        self.angular_entry.pack()
 
-        self.linear_label = tk.Label(self.root, text="Velocidad lineal (m/s):",bg='#191970',  fg='white', font=('Arial', 16))
-        self.linear_label.pack()
-        self.linear_entry = tk.Entry(self.root)
-        self.linear_entry.pack()
-
-        self.save_button = tk.Button(self.root, text="Guardar", command=self.save_values,bg='#191970', fg='white', font=('Arial', 16))
-        self.save_button.pack()
 
         # Asociar teclas del teclado con los botones de movimiento
         self.root.bind('<KeyPress-w>', lambda event: self.w_button.config(relief=tk.SUNKEN))
@@ -95,9 +86,6 @@ class Publicador(Node):
         self.key_listener.start()
         self.root.mainloop()
 
-    def save_values(self):
-        self.angular_value = float(self.angular_entry.get())
-        self.linear_value = float(self.linear_entry.get())
         
     def forward(self):
         button=self.w_button

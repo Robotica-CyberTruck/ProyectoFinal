@@ -1,0 +1,24 @@
+[0.728s] Invoking command in '/home/yesopi/ProyectoFinal/Robotics/src/robot_manipulator': PYTHONPATH=/home/yesopi/ProyectoFinal/Robotics/build/robot_manipulator/prefix_override:/home/yesopi/ProyectoFinal/Robotics/install/robot_manipulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot_manipulator build --build-base /home/yesopi/ProyectoFinal/Robotics/build/robot_manipulator/build install --record /home/yesopi/ProyectoFinal/Robotics/build/robot_manipulator/install.log --single-version-externally-managed
+[0.898s] running egg_info
+[0.898s] writing ../../build/robot_manipulator/robot_manipulator.egg-info/PKG-INFO
+[0.898s] writing dependency_links to ../../build/robot_manipulator/robot_manipulator.egg-info/dependency_links.txt
+[0.899s] writing entry points to ../../build/robot_manipulator/robot_manipulator.egg-info/entry_points.txt
+[0.899s] writing requirements to ../../build/robot_manipulator/robot_manipulator.egg-info/requires.txt
+[0.899s] writing top-level names to ../../build/robot_manipulator/robot_manipulator.egg-info/top_level.txt
+[0.900s] reading manifest file '../../build/robot_manipulator/robot_manipulator.egg-info/SOURCES.txt'
+[0.901s] writing manifest file '../../build/robot_manipulator/robot_manipulator.egg-info/SOURCES.txt'
+[0.901s] running build
+[0.901s] running build_py
+[0.901s] running install
+[0.901s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.901s]   warnings.warn(
+[0.901s] running install_lib
+[0.902s] running install_data
+[0.902s] running install_egg_info
+[0.904s] removing '/home/yesopi/ProyectoFinal/Robotics/install/robot_manipulator/lib/python3.10/site-packages/robot_manipulator-0.0.0-py3.10.egg-info' (and everything under it)
+[0.904s] Copying ../../build/robot_manipulator/robot_manipulator.egg-info to /home/yesopi/ProyectoFinal/Robotics/install/robot_manipulator/lib/python3.10/site-packages/robot_manipulator-0.0.0-py3.10.egg-info
+[0.904s] running install_scripts
+[0.920s] Installing interfaz_brazo script to /home/yesopi/ProyectoFinal/Robotics/install/robot_manipulator/lib/robot_manipulator
+[0.920s] Installing pub script to /home/yesopi/ProyectoFinal/Robotics/install/robot_manipulator/lib/robot_manipulator
+[0.920s] writing list of installed files to '/home/yesopi/ProyectoFinal/Robotics/build/robot_manipulator/install.log'
+[0.938s] Invoked command in '/home/yesopi/ProyectoFinal/Robotics/src/robot_manipulator' returned '0': PYTHONPATH=/home/yesopi/ProyectoFinal/Robotics/build/robot_manipulator/prefix_override:/home/yesopi/ProyectoFinal/Robotics/install/robot_manipulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot_manipulator build --build-base /home/yesopi/ProyectoFinal/Robotics/build/robot_manipulator/build install --record /home/yesopi/ProyectoFinal/Robotics/build/robot_manipulator/install.log --single-version-externally-managed

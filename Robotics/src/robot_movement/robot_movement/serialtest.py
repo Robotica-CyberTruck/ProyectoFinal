@@ -31,11 +31,6 @@ class SerialTester(Node):
         self.contador += 1  # Incrementa el contador
         start_time = time.time()  # Guarda el tiempo actual
 
-        #############
-        response_msg = String()
-        response_msg.data = self.serial.readline().decode('utf-8').strip()
-        self.pub.publish(response_msg)
-        ############
         if msg.linear.x > 0:
             self.serial.write(b'w')
             print("w")
@@ -50,7 +45,12 @@ class SerialTester(Node):
             print("d")
         else:
             self.serial.write(b'n')
-
+        # Lee la respuesta de la ESP32
+        response = self.serial.readline().decode('utf-8').rstrip()
+        elapsed_time = time.time() - start_time  # Calcula el tiempo transcurrido
+        print("Tiempo de respuesta: {:.2f} segundos".format(elapsed_time))
+        print("Respuesta de ESP32: {}".format(response))
+        print("Respuesta de ESP32: {}".format(response))
 
 def main(args=None):
     rclpy.init(args=args)

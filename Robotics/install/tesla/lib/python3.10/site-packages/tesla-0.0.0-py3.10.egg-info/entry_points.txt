@@ -1,7 +1,0 @@
-[console_scripts]
-esp32 = tesla.esp32:main
-interfaz = tesla.robot_interface:main
-player = tesla.robot_player:main
-serial = tesla.serialtest:main
-teclado = tesla.robot_teleop:main
-

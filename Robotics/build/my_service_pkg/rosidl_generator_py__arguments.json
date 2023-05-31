@@ -1,9 +1,9 @@
 {
   "package_name": "my_service_pkg",
-  "output_dir": "/home/yesopi/ProyectoFinal/Robotics/build/my_service_pkg/rosidl_generator_py/my_service_pkg",
+  "output_dir": "/home/tatianam/ProyectoFinal/Robotics/build/my_service_pkg/rosidl_generator_py/my_service_pkg",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/yesopi/ProyectoFinal/Robotics/build/my_service_pkg/rosidl_adapter/my_service_pkg:srv/SetTrajectoryFile.idl"
+    "/home/tatianam/ProyectoFinal/Robotics/build/my_service_pkg/rosidl_adapter/my_service_pkg:srv/SetTrajectoryFile.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
@@ -19,6 +19,6 @@
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
-    "/home/yesopi/ProyectoFinal/Robotics/build/my_service_pkg/rosidl_adapter/my_service_pkg/srv/SetTrajectoryFile.idl"
+    "/home/tatianam/ProyectoFinal/Robotics/build/my_service_pkg/rosidl_adapter/my_service_pkg/srv/SetTrajectoryFile.idl"
   ]
 }

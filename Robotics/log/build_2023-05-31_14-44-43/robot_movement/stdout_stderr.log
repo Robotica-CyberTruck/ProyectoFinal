@@ -1,0 +1,56 @@
+running egg_info
+creating ../../build/robot_movement/robot_movement.egg-info
+writing ../../build/robot_movement/robot_movement.egg-info/PKG-INFO
+writing dependency_links to ../../build/robot_movement/robot_movement.egg-info/dependency_links.txt
+writing entry points to ../../build/robot_movement/robot_movement.egg-info/entry_points.txt
+writing requirements to ../../build/robot_movement/robot_movement.egg-info/requires.txt
+writing top-level names to ../../build/robot_movement/robot_movement.egg-info/top_level.txt
+writing manifest file '../../build/robot_movement/robot_movement.egg-info/SOURCES.txt'
+reading manifest file '../../build/robot_movement/robot_movement.egg-info/SOURCES.txt'
+writing manifest file '../../build/robot_movement/robot_movement.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/tatianam/ProyectoFinal/Robotics/build/robot_movement/build
+creating /home/tatianam/ProyectoFinal/Robotics/build/robot_movement/build/lib
+creating /home/tatianam/ProyectoFinal/Robotics/build/robot_movement/build/lib/robot_movement
+copying robot_movement/serialtest.py -> /home/tatianam/ProyectoFinal/Robotics/build/robot_movement/build/lib/robot_movement
+copying robot_movement/__init__.py -> /home/tatianam/ProyectoFinal/Robotics/build/robot_movement/build/lib/robot_movement
+copying robot_movement/robot_player.py -> /home/tatianam/ProyectoFinal/Robotics/build/robot_movement/build/lib/robot_movement
+copying robot_movement/robot_teleop.py -> /home/tatianam/ProyectoFinal/Robotics/build/robot_movement/build/lib/robot_movement
+copying robot_movement/esp32.py -> /home/tatianam/ProyectoFinal/Robotics/build/robot_movement/build/lib/robot_movement
+copying robot_movement/robot_interface.py -> /home/tatianam/ProyectoFinal/Robotics/build/robot_movement/build/lib/robot_movement
+copying robot_movement/serialviewer.py -> /home/tatianam/ProyectoFinal/Robotics/build/robot_movement/build/lib/robot_movement
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement
+copying /home/tatianam/ProyectoFinal/Robotics/build/robot_movement/build/lib/robot_movement/serialtest.py -> /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement
+copying /home/tatianam/ProyectoFinal/Robotics/build/robot_movement/build/lib/robot_movement/__init__.py -> /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement
+copying /home/tatianam/ProyectoFinal/Robotics/build/robot_movement/build/lib/robot_movement/robot_player.py -> /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement
+copying /home/tatianam/ProyectoFinal/Robotics/build/robot_movement/build/lib/robot_movement/robot_teleop.py -> /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement
+copying /home/tatianam/ProyectoFinal/Robotics/build/robot_movement/build/lib/robot_movement/esp32.py -> /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement
+copying /home/tatianam/ProyectoFinal/Robotics/build/robot_movement/build/lib/robot_movement/robot_interface.py -> /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement
+copying /home/tatianam/ProyectoFinal/Robotics/build/robot_movement/build/lib/robot_movement/serialviewer.py -> /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement
+byte-compiling /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement/serialtest.py to serialtest.cpython-310.pyc
+byte-compiling /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement/robot_player.py to robot_player.cpython-310.pyc
+byte-compiling /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement/robot_teleop.py to robot_teleop.cpython-310.pyc
+byte-compiling /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement/esp32.py to esp32.cpython-310.pyc
+byte-compiling /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement/robot_interface.py to robot_interface.cpython-310.pyc
+byte-compiling /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement/serialviewer.py to serialviewer.cpython-310.pyc
+running install_data
+creating /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/share/ament_index
+creating /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/share/ament_index/resource_index
+creating /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/share/ament_index/resource_index/packages
+copying resource/robot_movement -> /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/share/ament_index/resource_index/packages
+copying package.xml -> /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/share/robot_movement
+running install_egg_info
+Copying ../../build/robot_movement/robot_movement.egg-info to /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/python3.10/site-packages/robot_movement-0.0.0-py3.10.egg-info
+running install_scripts
+Installing esp32 script to /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/robot_movement
+Installing interfaz script to /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/robot_movement
+Installing player script to /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/robot_movement
+Installing serial script to /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/robot_movement
+Installing teclado script to /home/tatianam/ProyectoFinal/Robotics/install/robot_movement/lib/robot_movement
+writing list of installed files to '/home/tatianam/ProyectoFinal/Robotics/build/robot_movement/install.log'

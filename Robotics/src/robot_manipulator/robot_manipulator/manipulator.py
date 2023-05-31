@@ -49,37 +49,56 @@ class Publicador(Node):
         movement_frame.grid_columnconfigure(0, weight=1)
         movement_frame.grid_columnconfigure(1, weight=1)
         movement_frame.grid_columnconfigure(2, weight=1)
+        movement_frame.grid_columnconfigure(3, weight=1)
+        
         movement_frame.grid_rowconfigure(0, weight=1)
         movement_frame.grid_rowconfigure(1, weight=1)
-        
+        movement_frame.grid_rowconfigure(2, weight=1)
+        movement_frame.grid_rowconfigure(3, weight=1)
 
         bg_label = tk.Label(movement_frame, image=bg_image)
         bg_label.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
 
         # Crear botones de movimiento y hacerlos transparentes
         
-        self.w_button = tk.Button(movement_frame, text="W", width=5, height=5, command=lambda:self.forward(self,self.w_button), highlightthickness=0, bg='#191970', fg='white', font=('Arial', 16))
-        self.a_button = tk.Button(movement_frame, text="A", width=5, height=5, command=lambda:self.left(self,self.a_button), highlightthickness=0, bg='#191970', fg='white', font=('Arial', 16))
-        self.s_button = tk.Button(movement_frame, text="S", width=5, height=5, command=lambda:self.backward(self,self.s_button), highlightthickness=0,bg='#191970', fg='white', font=('Arial', 16))
-        self.d_button = tk.Button(movement_frame, text="D", width=5, height=5, command=lambda:self.right(self,self.d_button), highlightthickness=0, bg='#191970', fg='white', font=('Arial', 16))
-
-        self.w_button.grid(row=0, column=1)
-        self.a_button.grid(row=1, column=0) 
-        self.s_button.grid(row=1, column=1)
-        self.d_button.grid(row=1, column=2)
-                             
+        self.z_button = tk.Button(movement_frame, text="Z", width=5, height=5, command=lambda:self.grip_on(self,self.z_button), highlightthickness=0, bg='#191970', fg='white', font=('Arial', 16))
+        self.x_button = tk.Button(movement_frame, text="X", width=5, height=5, command=lambda:self.grip_off(self,self.x_button), highlightthickness=0, bg='#191970', fg='white', font=('Arial', 16))
+        self.y_button = tk.Button(movement_frame, text="Y", width=5, height=5, command=lambda:self.antarm_forward(self,self.y_button), highlightthickness=0,bg='#191970', fg='white', font=('Arial', 16))
+        self.u_button = tk.Button(movement_frame, text="U", width=5, height=5, command=lambda:self.antarm_backward(self,self.u_button), highlightthickness=0, bg='#191970', fg='white', font=('Arial', 16))
+        self.h_button = tk.Button(movement_frame, text="H", width=5, height=5, command=lambda:self.arm_forward(self,self.h_button), highlightthickness=0, bg='#191970', fg='white', font=('Arial', 16))
+        self.j_button = tk.Button(movement_frame, text="J", width=5, height=5, command=lambda:self.arm_backward(self,self.j_button), highlightthickness=0, bg='#191970', fg='white', font=('Arial', 16))
+        self.n_button = tk.Button(movement_frame, text="N", width=5, height=5, command=lambda:self.base_left(self,self.n_button), highlightthickness=0, bg='#191970', fg='white', font=('Arial', 16))
+        self.m_button = tk.Button(movement_frame, text="M", width=5, height=5, command=lambda:self.base_right(self,self.m_button), highlightthickness=0, bg='#191970', fg='white', font=('Arial', 16))
+        
+        
+        self.z_button.grid(row=0, column=0)
+        self.x_button.grid(row=0, column=1) 
+        self.y_button.grid(row=1, column=2)
+        self.u_button.grid(row=1, column=3)
+        self.h_button.grid(row=2, column=0)
+        self.j_button.grid(row=2, column=1) 
+        self.n_button.grid(row=3, column=2)
+        self.m_button.grid(row=3, column=3)                    
 
 
         # Asociar teclas del teclado con los botones de movimiento
-        self.root.bind('<KeyPress-w>', lambda event: self.w_button.config(relief=tk.SUNKEN))
-        self.root.bind('<KeyPress-a>', lambda event: self.a_button.config(relief=tk.SUNKEN))
-        self.root.bind('<KeyPress-s>', lambda event: self.s_button.config(relief=tk.SUNKEN))
-        self.root.bind('<KeyPress-d>', lambda event: self.d_button.config(relief=tk.SUNKEN))
+        self.root.bind('<KeyPress-z>', lambda event: self.z_button.config(relief=tk.SUNKEN))
+        self.root.bind('<KeyPress-x>', lambda event: self.x_button.config(relief=tk.SUNKEN))
+        self.root.bind('<KeyPress-y>', lambda event: self.y_button.config(relief=tk.SUNKEN))
+        self.root.bind('<KeyPress-u>', lambda event: self.u_button.config(relief=tk.SUNKEN))
+        self.root.bind('<KeyPress-h>', lambda event: self.h_button.config(relief=tk.SUNKEN))
+        self.root.bind('<KeyPress-j>', lambda event: self.j_button.config(relief=tk.SUNKEN))
+        self.root.bind('<KeyPress-n>', lambda event: self.n_button.config(relief=tk.SUNKEN))
+        self.root.bind('<KeyPress-m>', lambda event: self.m_button.config(relief=tk.SUNKEN))
 
-        self.root.bind('<KeyRelease-w>', lambda event: self.w_button.config(relief=tk.RAISED))
-        self.root.bind('<KeyRelease-a>', lambda event: self.a_button.config(relief=tk.RAISED))
-        self.root.bind('<KeyRelease-s>', lambda event: self.s_button.config(relief=tk.RAISED))
-        self.root.bind('<KeyRelease-d>', lambda event: self.d_button.config(relief=tk.RAISED))
+        self.root.bind('<KeyRelease-z>', lambda event: self.z_button.config(relief=tk.RAISED))
+        self.root.bind('<KeyRelease-x>', lambda event: self.x_button.config(relief=tk.RAISED))
+        self.root.bind('<KeyRelease-y>', lambda event: self.y_button.config(relief=tk.RAISED))
+        self.root.bind('<KeyRelease-u>', lambda event: self.u_button.config(relief=tk.RAISED))
+        self.root.bind('<KeyRelease-h>', lambda event: self.h_button.config(relief=tk.RAISED))
+        self.root.bind('<KeyRelease-j>', lambda event: self.j_button.config(relief=tk.RAISED))
+        self.root.bind('<KeyRelease-n>', lambda event: self.n_button.config(relief=tk.RAISED))
+        self.root.bind('<KeyRelease-m>', lambda event: self.m_button.config(relief=tk.RAISED))
 
         # Iniciar listener de teclado
         self.key_listener = keyboard.Listener(on_press=self.on_press, on_release=self.on_release)
@@ -87,49 +106,99 @@ class Publicador(Node):
         self.root.mainloop()
 
         
-    def forward(self):
-        button=self.w_button
-        self.movement.linear.x = self.linear_value
+    def open_grip(self):
+        button=self.z_button
+        self.movement= self.linear_value
+        print(self.movement)
         self.publisher_.publish(self.movement)
         button.configure(bg='#FFA500')
 
-    def backward(self):
-        button=self.s_button
+    def close_grip(self):
+        button=self.x_button
         self.movement.linear.x = -(self.linear_value)
         self.publisher_.publish(self.movement)
         button.configure(bg='#FFA500')
 
-    def left(self):
-        button=self.a_button
+    def antarm_forward(self):
+        button=self.y_button
         self.movement.linear.y = self.linear_value
         self.publisher_.publish(self.movement)
         button.configure(bg='#FFA500')
 
-    def right(self):
-        button=self.d_button
+    def antarm_backward(self):
+        button=self.u_button
         self.movement.linear.y =  -self.linear_value
         self.publisher_.publish(self.movement)
         button.configure(bg='#FFA500')
-    def unforward(self):
-        button=self.w_button
+        
+    def arm_forward(self):
+        button=self.h_button
+        self.movement.linear.y = self.linear_value
+        self.publisher_.publish(self.movement)
+        button.configure(bg='#FFA500')
+
+    def arm_backward(self):
+        button=self.j_button
+        self.movement.linear.y =  -self.linear_value
+        self.publisher_.publish(self.movement)
+        button.configure(bg='#FFA500')    
+        
+    def base_left(self):
+        button=self.n_button
+        self.movement.linear.y = self.linear_value
+        self.publisher_.publish(self.movement)
+        button.configure(bg='#FFA500')
+
+    def base_right(self):
+        button=self.m_button
+        self.movement.linear.y =  -self.linear_value
+        self.publisher_.publish(self.movement)
+        button.configure(bg='#FFA500')
+    
+    def unopen_grip(self):
+        button=self.z_button
         self.movement.linear.x = 0.0
         self.publisher_.publish(self.movement)
         button.configure(bg='#191970')
 
-    def unbackward(self):
-        button=self.s_button
+    def unclose_grip(self):
+        button=self.x_button
         self.movement.linear.x = 0.0
         self.publisher_.publish(self.movement)
         button.configure(bg='#191970')
 
-    def unleft(self):
-        button=self.a_button
+    def antarm_unforward(self):
+        button=self.y_button
         self.movement.linear.y  = 0.0
         self.publisher_.publish(self.movement)
         button.configure(bg='#191970')
 
-    def unright(self):
-        button=self.d_button
+    def antarm_unbackward(self):
+        button=self.u_button
+        self.movement.linear.y  = 0.0
+        self.publisher_.publish(self.movement)
+        button.configure(bg='#191970')
+        
+    def arm_unforward(self):
+        button=self.h_button
+        self.movement.linear.y  = 0.0
+        self.publisher_.publish(self.movement)
+        button.configure(bg='#191970')
+
+    def arm_unbackward(self):
+        button=self.j_button
+        self.movement.linear.y  = 0.0
+        self.publisher_.publish(self.movement)
+        button.configure(bg='#191970')
+        
+    def base_unleft(self):
+        button=self.n_button
+        self.movement.linear.y  = 0.0
+        self.publisher_.publish(self.movement)
+        button.configure(bg='#191970')
+
+    def base_unright(self):
+        button=self.m_button
         self.movement.linear.y  = 0.0
         self.publisher_.publish(self.movement)
         button.configure(bg='#191970')
@@ -142,19 +211,30 @@ class Publicador(Node):
     def on_press(self, key):
         try:
             # Mapear teclas de flechas a comandos de movimiento
-            if key.char == 'w' and (not self.presionado):
+            if key.char == 'z' and (not self.presionado):
                 self.presionado=True
-                self.forward()
-            elif key.char == 's'and (not self.presionado):
+                self.open_grip()
+            elif key.char == 'x'and (not self.presionado):
                 self.presionado=True
-                self.backward()
-
-            elif key.char == 'a'and (not self.presionado):
+                self.close_grip()
+            elif key.char == 'y'and (not self.presionado):
                 self.presionado=True
-                self.left()
-            elif key.char == 'd'and (not self.presionado):
-                self.presionado=True
+                self.antarm_forward()
+            elif key.char == 'u'and (not self.presionado):
+                self.antarm_backward=True
                 self.right()
+            elif key.char == 'h'and (not self.presionado):
+                self.presionado=True
+                self.arm_forward()
+            elif key.char == 'j'and (not self.presionado):
+                self.arm_backward=True
+                self.left()
+            elif key.char == 'n'and (not self.presionado):
+                self.presionado=True
+                self.base_left()
+            elif key.char == 'm'and (not self.presionado):
+                self.presionado=True
+                self.base_right()
             else:
                 # Si se presiona cualquier otra tecla, tomar el comando personalizado de la entrada de texto
                 cmd = self.custom_cmd_entry.get()
@@ -166,18 +246,30 @@ class Publicador(Node):
     def on_release(self, key):
         # Detener el movimiento al soltar cualquier tecla de movimiento
         try:
-            if key.char == 'w'and (self.presionado):
+            if key.char == 'z'and (self.presionado):
                 self.presionado=False
-                self.unforward()
-            elif key.char == 's'and (self.presionado):
+                self.unopen_grip()
+            elif key.char == 'x'and (self.presionado):
                 self.presionado=False
-                self.unbackward()
-            elif key.char == 'a'and ( self.presionado):
+                self.unclose_grip()
+            elif key.char == 'y'and ( self.presionado):
                 self.presionado=False
-                self.unleft()
-            elif key.char == 'd'and ( self.presionado):
+                self.antarm_unforward()
+            elif key.char == 'u'and ( self.presionado):
                 self.presionado=False
-                self.unright()
+                self.antarm_unbackward()
+            elif key.char == 'h'and (self.presionado):
+                self.presionado=False
+                self.arm_unforward()
+            elif key.char == 'j'and (self.presionado):
+                self.presionado=False
+                self.arm_unbackward()
+            elif key.char == 'n'and ( self.presionado):
+                self.presionado=False
+                self.base_unleft()
+            elif key.char == 'm'and ( self.presionado):
+                self.presionado=False
+                self.base_unright()
         except AttributeError:
             # Ignorar teclas de modificación (Shift, Ctrl, Alt, etc.)
             pass

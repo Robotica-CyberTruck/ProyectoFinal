@@ -1,0 +1,148 @@
+[0.032s] Invoking command in '/home/tatianam/ProyectoFinal/Robotics/build/my_service_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tatianam/ProyectoFinal/Robotics/install/robot_movement:/home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator:/opt/ros/humble /usr/bin/cmake --build /home/tatianam/ProyectoFinal/Robotics/build/my_service_pkg -- -j4 -l4
+[0.386s] [  3%] Built target my_service_pkg__cpp
+[0.386s] [ 12%] Built target my_service_pkg__rosidl_generator_c
+[0.386s] [ 12%] Built target ament_cmake_python_copy_my_service_pkg
+[0.386s] [ 22%] Built target my_service_pkg__rosidl_typesupport_fastrtps_cpp
+[0.386s] [ 35%] Built target my_service_pkg__rosidl_typesupport_cpp
+[0.387s] [ 41%] Built target my_service_pkg__rosidl_typesupport_introspection_cpp
+[0.387s] [ 51%] Built target my_service_pkg__rosidl_typesupport_fastrtps_c
+[0.387s] [ 61%] Built target my_service_pkg__rosidl_typesupport_introspection_c
+[0.387s] [ 70%] Built target my_service_pkg__rosidl_typesupport_c
+[0.387s] [ 70%] Built target my_service_pkg
+[0.387s] [ 74%] Built target my_service_pkg__py
+[0.387s] [ 80%] Built target my_service_pkg__rosidl_generator_py
+[0.387s] [ 87%] Built target my_service_pkg__rosidl_typesupport_fastrtps_c__pyext
+[0.387s] [ 93%] Built target my_service_pkg__rosidl_typesupport_introspection_c__pyext
+[0.387s] [100%] Built target my_service_pkg__rosidl_typesupport_c__pyext
+[0.444s] running egg_info
+[0.446s] writing my_service_pkg.egg-info/PKG-INFO
+[0.447s] writing dependency_links to my_service_pkg.egg-info/dependency_links.txt
+[0.447s] writing top-level names to my_service_pkg.egg-info/top_level.txt
+[0.451s] reading manifest file 'my_service_pkg.egg-info/SOURCES.txt'
+[0.453s] writing manifest file 'my_service_pkg.egg-info/SOURCES.txt'
+[0.502s] [100%] Built target ament_cmake_python_build_my_service_pkg_egg
+[0.708s] Invoked command in '/home/tatianam/ProyectoFinal/Robotics/build/my_service_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tatianam/ProyectoFinal/Robotics/install/robot_movement:/home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator:/opt/ros/humble /usr/bin/cmake --build /home/tatianam/ProyectoFinal/Robotics/build/my_service_pkg -- -j4 -l4
+[0.788s] Invoking command in '/home/tatianam/ProyectoFinal/Robotics/build/my_service_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tatianam/ProyectoFinal/Robotics/install/robot_movement:/home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator:/opt/ros/humble /usr/bin/cmake --install /home/tatianam/ProyectoFinal/Robotics/build/my_service_pkg
+[0.799s] -- Install configuration: ""
+[0.799s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/ament_index/resource_index/rosidl_interfaces/my_service_pkg
+[0.799s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg
+[0.799s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv
+[0.800s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/set_trajectory_file.h
+[0.801s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail
+[0.801s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__struct.h
+[0.801s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__type_support.h
+[0.802s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__functions.c
+[0.802s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__functions.h
+[0.802s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/msg
+[0.803s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/msg/rosidl_generator_c__visibility_control.h
+[0.803s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/environment/library_path.sh
+[0.803s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/environment/library_path.dsv
+[0.804s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_generator_c.so
+[0.804s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg
+[0.804s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv
+[0.804s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail
+[0.804s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__rosidl_typesupport_fastrtps_c.h
+[0.805s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/msg
+[0.805s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.805s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_typesupport_fastrtps_c.so
+[0.805s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg
+[0.805s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv
+[0.805s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail
+[0.805s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__type_support.c
+[0.805s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__rosidl_typesupport_introspection_c.h
+[0.805s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/msg
+[0.805s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.806s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_typesupport_introspection_c.so
+[0.806s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_typesupport_c.so
+[0.806s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg
+[0.806s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv
+[0.806s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail
+[0.806s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__struct.hpp
+[0.806s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__traits.hpp
+[0.806s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__builder.hpp
+[0.806s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/set_trajectory_file.hpp
+[0.807s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg
+[0.807s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv
+[0.807s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail
+[0.807s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__rosidl_typesupport_fastrtps_cpp.hpp
+[0.807s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/dds_fastrtps
+[0.807s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/msg
+[0.807s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.807s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_typesupport_fastrtps_cpp.so
+[0.807s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg
+[0.808s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv
+[0.808s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail
+[0.808s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__type_support.cpp
+[0.808s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/include/my_service_pkg/my_service_pkg/srv/detail/set_trajectory_file__rosidl_typesupport_introspection_cpp.hpp
+[0.813s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_typesupport_introspection_cpp.so
+[0.813s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_typesupport_cpp.so
+[0.814s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/environment/pythonpath.sh
+[0.814s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/environment/pythonpath.dsv
+[0.814s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg-0.0.0-py3.10.egg-info
+[0.814s] -- Installing: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg-0.0.0-py3.10.egg-info/PKG-INFO
+[0.814s] -- Installing: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.814s] -- Installing: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg-0.0.0-py3.10.egg-info/top_level.txt
+[0.814s] -- Installing: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.814s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg
+[0.814s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/my_service_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.814s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/libmy_service_pkg__rosidl_generator_py.so
+[0.815s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/_my_service_pkg_s.ep.rosidl_typesupport_introspection_c.c
+[0.815s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/__init__.py
+[0.815s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/my_service_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.815s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/_my_service_pkg_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.819s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/_my_service_pkg_s.ep.rosidl_typesupport_c.c
+[0.819s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/srv
+[0.820s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/srv/__init__.py
+[0.820s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/srv/_set_trajectory_file_s.c
+[0.820s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/srv/_set_trajectory_file.py
+[0.820s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/my_service_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.853s] Listing '/home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg'...
+[0.853s] Listing '/home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/srv'...
+[0.860s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/my_service_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.860s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/my_service_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.861s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/local/lib/python3.10/dist-packages/my_service_pkg/my_service_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.861s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/lib/libmy_service_pkg__rosidl_generator_py.so
+[0.861s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/srv/SetTrajectoryFile.idl
+[0.861s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/srv/SetTrajectoryFile.srv
+[0.862s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/srv/SetTrajectoryFile_Request.msg
+[0.862s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/srv/SetTrajectoryFile_Response.msg
+[0.862s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/ament_index/resource_index/package_run_dependencies/my_service_pkg
+[0.862s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/ament_index/resource_index/parent_prefix_path/my_service_pkg
+[0.862s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/environment/ament_prefix_path.sh
+[0.862s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/environment/ament_prefix_path.dsv
+[0.863s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/environment/path.sh
+[0.863s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/environment/path.dsv
+[0.863s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/local_setup.bash
+[0.863s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/local_setup.sh
+[0.863s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/local_setup.zsh
+[0.863s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/local_setup.dsv
+[0.863s] -- Installing: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/package.dsv
+[0.864s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/ament_index/resource_index/packages/my_service_pkg
+[0.864s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/export_my_service_pkg__rosidl_generator_cExport.cmake
+[0.864s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/export_my_service_pkg__rosidl_generator_cExport-noconfig.cmake
+[0.864s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/export_my_service_pkg__rosidl_typesupport_fastrtps_cExport.cmake
+[0.864s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/export_my_service_pkg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.864s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/my_service_pkg__rosidl_typesupport_introspection_cExport.cmake
+[0.864s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/my_service_pkg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.865s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/my_service_pkg__rosidl_typesupport_cExport.cmake
+[0.865s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/my_service_pkg__rosidl_typesupport_cExport-noconfig.cmake
+[0.865s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/export_my_service_pkg__rosidl_generator_cppExport.cmake
+[0.865s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/export_my_service_pkg__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.865s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/export_my_service_pkg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.865s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/my_service_pkg__rosidl_typesupport_introspection_cppExport.cmake
+[0.865s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/my_service_pkg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.865s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/my_service_pkg__rosidl_typesupport_cppExport.cmake
+[0.866s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/my_service_pkg__rosidl_typesupport_cppExport-noconfig.cmake
+[0.866s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/export_my_service_pkg__rosidl_generator_pyExport.cmake
+[0.866s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/export_my_service_pkg__rosidl_generator_pyExport-noconfig.cmake
+[0.866s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/rosidl_cmake-extras.cmake
+[0.866s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.866s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/ament_cmake_export_libraries-extras.cmake
+[0.866s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/ament_cmake_export_targets-extras.cmake
+[0.866s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.867s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.879s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.879s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/my_service_pkgConfig.cmake
+[0.879s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/cmake/my_service_pkgConfig-version.cmake
+[0.880s] -- Up-to-date: /home/tatianam/ProyectoFinal/Robotics/install/my_service_pkg/share/my_service_pkg/package.xml
+[0.880s] Invoked command in '/home/tatianam/ProyectoFinal/Robotics/build/my_service_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tatianam/ProyectoFinal/Robotics/install/robot_movement:/home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator:/opt/ros/humble /usr/bin/cmake --install /home/tatianam/ProyectoFinal/Robotics/build/my_service_pkg

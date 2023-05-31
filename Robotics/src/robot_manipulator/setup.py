@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
         'interfaz_brazo=robot_manipulator.robot_manipulator_interface_node:main',
         'pub=robot_manipulator.test_position_publisher_node:main',
+        'teclado_brazo =robot_manipulator.manipulator:main',
         'serial_brazo =robot_manipulator.serial_manipulator_node:main'
         ],
     },

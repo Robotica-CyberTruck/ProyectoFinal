@@ -4,3 +4,5 @@ my_service_pkg.egg-info/PKG-INFO
 my_service_pkg.egg-info/SOURCES.txt
 my_service_pkg.egg-info/dependency_links.txt
 my_service_pkg.egg-info/top_level.txt
+my_service_pkg/srv/__init__.py
+my_service_pkg/srv/_set_trajectory_file.py

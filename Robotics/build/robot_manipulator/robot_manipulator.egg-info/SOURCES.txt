@@ -10,6 +10,7 @@ setup.py
 ../../build/robot_manipulator/robot_manipulator.egg-info/zip-safe
 resource/robot_manipulator
 robot_manipulator/__init__.py
+robot_manipulator/manipulator.py
 robot_manipulator/robot_manipulator_interface_node.py
 robot_manipulator/serial_manipulator_node.py
 robot_manipulator/teclado_manipulator.py

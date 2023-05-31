@@ -1,0 +1,27 @@
+running egg_info
+writing ../../build/robot_manipulator/robot_manipulator.egg-info/PKG-INFO
+writing dependency_links to ../../build/robot_manipulator/robot_manipulator.egg-info/dependency_links.txt
+writing entry points to ../../build/robot_manipulator/robot_manipulator.egg-info/entry_points.txt
+writing requirements to ../../build/robot_manipulator/robot_manipulator.egg-info/requires.txt
+writing top-level names to ../../build/robot_manipulator/robot_manipulator.egg-info/top_level.txt
+reading manifest file '../../build/robot_manipulator/robot_manipulator.egg-info/SOURCES.txt'
+writing manifest file '../../build/robot_manipulator/robot_manipulator.egg-info/SOURCES.txt'
+running build
+running build_py
+copying robot_manipulator/serial_manipulator_node.py -> /home/tatianam/ProyectoFinal/Robotics/build/robot_manipulator/build/lib/robot_manipulator
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+copying /home/tatianam/ProyectoFinal/Robotics/build/robot_manipulator/build/lib/robot_manipulator/serial_manipulator_node.py -> /home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/python3.10/site-packages/robot_manipulator
+byte-compiling /home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/python3.10/site-packages/robot_manipulator/serial_manipulator_node.py to serial_manipulator_node.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/python3.10/site-packages/robot_manipulator-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/robot_manipulator/robot_manipulator.egg-info to /home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/python3.10/site-packages/robot_manipulator-0.0.0-py3.10.egg-info
+running install_scripts
+Installing interfaz_brazo script to /home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/robot_manipulator
+Installing pub script to /home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/robot_manipulator
+Installing serial_brazo script to /home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/robot_manipulator
+Installing teclado_brazo script to /home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/robot_manipulator
+writing list of installed files to '/home/tatianam/ProyectoFinal/Robotics/build/robot_manipulator/install.log'

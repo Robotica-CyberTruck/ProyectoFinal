@@ -1,0 +1,4 @@
+Invoking command in '/home/tatianam/ProyectoFinal/Robotics/build/my_service_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/tatianam/ProyectoFinal/Robotics/build/my_service_pkg -- -j4 -l4
+Invoked command in '/home/tatianam/ProyectoFinal/Robotics/build/my_service_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/tatianam/ProyectoFinal/Robotics/build/my_service_pkg -- -j4 -l4
+Invoking command in '/home/tatianam/ProyectoFinal/Robotics/build/my_service_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/tatianam/ProyectoFinal/Robotics/build/my_service_pkg
+Invoked command in '/home/tatianam/ProyectoFinal/Robotics/build/my_service_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/tatianam/ProyectoFinal/Robotics/build/my_service_pkg

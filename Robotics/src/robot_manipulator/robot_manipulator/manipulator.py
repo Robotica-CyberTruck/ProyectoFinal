@@ -2,7 +2,7 @@
 
 import numpy as np
 import rclpy
-from geometry_msgs.msg import Twist
+from geometry_msgs.msg import Vector3
 from pynput import keyboard
 from rclpy.node import Node
 from PIL import ImageTk, Image
@@ -15,12 +15,12 @@ import os
 class Publicador(Node):
 
     def __init__(self):
-        super().__init__('robot_teleop')
-        self.publisher_ = self.create_publisher(Twist, 'robot_cmdVel', 10)
+        super().__init__('manipulator')
+        self.publisher_ = self.create_publisher(Vector3, 'manipulator_ang', 10)
         timer_period = 1  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
-        self.movement = Twist()
+        self.movement = Vector3()
         self.presionado=False
         #por defecto la velocidades son 1 
         self.angular_value = 1.0

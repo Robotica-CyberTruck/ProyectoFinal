@@ -1,10 +1,12 @@
 /home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/python3.10/site-packages/robot_manipulator/serial_manipulator_node.py
 /home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/python3.10/site-packages/robot_manipulator/teclado_manipulator.py
+/home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/python3.10/site-packages/robot_manipulator/manipulator.py
 /home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/python3.10/site-packages/robot_manipulator/__init__.py
 /home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/python3.10/site-packages/robot_manipulator/test_position_publisher_node.py
 /home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/python3.10/site-packages/robot_manipulator/robot_manipulator_interface_node.py
 /home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/python3.10/site-packages/robot_manipulator/__pycache__/serial_manipulator_node.cpython-310.pyc
 /home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/python3.10/site-packages/robot_manipulator/__pycache__/teclado_manipulator.cpython-310.pyc
+/home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/python3.10/site-packages/robot_manipulator/__pycache__/manipulator.cpython-310.pyc
 /home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/python3.10/site-packages/robot_manipulator/__pycache__/__init__.cpython-310.pyc
 /home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/python3.10/site-packages/robot_manipulator/__pycache__/test_position_publisher_node.cpython-310.pyc
 /home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/python3.10/site-packages/robot_manipulator/__pycache__/robot_manipulator_interface_node.cpython-310.pyc
@@ -20,3 +22,4 @@
 /home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/robot_manipulator/interfaz_brazo
 /home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/robot_manipulator/pub
 /home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/robot_manipulator/serial_brazo
+/home/tatianam/ProyectoFinal/Robotics/install/robot_manipulator/lib/robot_manipulator/teclado_brazo

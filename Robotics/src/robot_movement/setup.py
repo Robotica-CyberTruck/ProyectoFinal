@@ -24,6 +24,7 @@ setup(
         'interfaz=robot_movement.robot_interface:main',
         'player=robot_movement.robot_player:main',
         'serial=robot_movement.serialtest:main',
+        
         ],
     },
 )

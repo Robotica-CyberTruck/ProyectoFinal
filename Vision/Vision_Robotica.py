@@ -77,14 +77,33 @@ def main(imagen):
   desenfocado = cv2.GaussianBlur(gris, (5, 5), 0)
 
   #Ajusta los parámetros de umbralización
-  umbral, thresh = cv2.threshold(desenfocado, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
-  nuevo_umbral = umbral * 0.7  # Ajusta el umbral multiplicándolo por un factor
-  _, thresh_ajustado = cv2.threshold(desenfocado, nuevo_umbral, 255, cv2.THRESH_BINARY)
-    
-  cv2.imshow(thresh)
+  thresh = cv2.adaptiveThreshold(desenfocado, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 13, 3.5)
+  
+  # Aplicar el filtro de umbralización de Otsu
+  #_, thresh = cv2.threshold(desenfocado, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+
+  cv2.imshow("Thresh", thresh)
+
+  # Definir el kernel para el filtrado morfológico
+  kernel = np.ones((6, 6), np.uint8)  
+
+  # Aplicar el filtro de apertura morfológica
+  #thresh = cv2.morphologyEx(thresh, cv2.MORPH_OPEN, kernel)
+
+  #cv2.imshow("Open", thresh)
 
   #Deteccion de contornos
   contornos, jerarquia = cv2.findContours(thresh, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_NONE)
+
+  #contornos encontrados
+  # Crear una copia de la imagen original
+  imagen_contornos = imagen.copy()
+
+  # Dibujar los contornos en la imagen
+  cv2.drawContours(imagen_contornos, contornos, -1, (0, 255, 0), 2)
+
+  # Mostrar la imagen con los contornos
+  cv2.imshow('Imagen con contornos', imagen_contornos)
     
   # Ordenar contornos por área y seleccionar  contorno    
   sorted_contours = sorted(contornos, key=cv2.contourArea, reverse=True)
@@ -188,9 +207,9 @@ def main(imagen):
     w_total += 2 * aumento_w
     h_total += 2 * aumento_h
 
-    texto_detectado = texto(imagen, x_min, y_min, w_total, h_total)
-    print("\n" )
-    print("El texto es: " + str(texto_detectado))
+    #texto_detectado = texto(imagen, x_min, y_min, w_total, h_total)
+    #print("\n" )
+    #print("El texto es: " + str(texto_detectado))
 
     # Dibuja el rectángulo delimitador en la imagen original
     cv2.rectangle(imagen, (x_min, y_min), (x_min + w_total, y_min + h_total), (255, 0, 0), 2)
@@ -205,12 +224,14 @@ def main(imagen):
          
 
 
-imagen = cv2.imread('banner3.jpg')
-imagen = cv2.imread('banner2.jpg')
-imagen = cv2.imread('banner_bordeDelgado.jpg')
-imagen = cv2.imread('banner_otroOrden (1).jpg')
+
+#imagen = cv2.imread('banner_otroOrden (1).jpg')
+#imagen = cv2.imread('banner2.jpg')
+#imagen = cv2.imread('banner_bordeDelgado.jpg')
+#imagen = cv2.imread('/home/daniel/ProyectoFinal/Vision/banner3.jpg')
+imagen = cv2.imread('/home/daniel/ProyectoFinal/Vision/banner2Recortado.jpg')
 
 main(imagen)
-             
+            
 cv2.imshow('Imagen', imagen)
 cv2.waitKey(0)

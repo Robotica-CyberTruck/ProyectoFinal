@@ -32,19 +32,19 @@ class SerialTester(Node):
         start_time = time.time()  # Guarda el tiempo actual
 
         if msg.linear.x > 0:
-            self.serial.write(b'w')
-            print("w")
+            self.serial.write(b'1')
+            print("1")
         elif msg.linear.x < 0:
-            self.serial.write(b's')
-            print("s")
+            self.serial.write(b'2')
+            print("2")
         elif msg.linear.y < 0:
-            self.serial.write(b'a')
-            print("a")
+            self.serial.write(b'3')
+            print("3")
         elif msg.linear.y > 0:
-            self.serial.write(b'd')
-            print("d")
+            self.serial.write(b'4')
+            print("4")
         else:
-            self.serial.write(b'n')
+            self.serial.write(b'0')
         # Lee la respuesta de la ESP32
         response = self.serial.readline().decode('utf-8').rstrip()
         elapsed_time = time.time() - start_time  # Calcula el tiempo transcurrido

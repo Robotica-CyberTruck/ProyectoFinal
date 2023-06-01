@@ -40,51 +40,50 @@ pinMode(motor4In2Pin, OUTPUT);
 
 VaciarBuffer();
 // Iniciar la comunicación serial
-Serial.begin(9600);
+Serial.begin(115200);
 }
 //funciones de movimiento
 void MoverAdelante(){
-
+  //150 pwm
   digitalWrite(motor2In1Pin, HIGH);
   digitalWrite(motor2In2Pin, LOW);
-  analogWrite(motor2EnablePin, 150);
+  analogWrite(motor2EnablePin, 254);
 
   digitalWrite(motorIn1Pin, HIGH);
   digitalWrite(motorIn2Pin, LOW);
-  analogWrite(motorEnablePin, 150);
+  analogWrite(motorEnablePin, 254);
 
   digitalWrite(motor3In1Pin, LOW);
   digitalWrite(motor3In2Pin, HIGH);
-  analogWrite(motor3EnablePin, 150);
+  analogWrite(motor3EnablePin, 254);
 
   digitalWrite(motor4In1Pin, LOW);
   digitalWrite(motor4In2Pin, HIGH);
-  analogWrite(motor4EnablePin, 150);
+  analogWrite(motor4EnablePin, 254);
 
   delay(345); // Esperar 1 segundo antes de detener el motor
   analogWrite(motor2EnablePin, 0);
   analogWrite(motorEnablePin, 0);
   analogWrite(motor3EnablePin, 0);
   analogWrite(motor4EnablePin, 0);
-  Serial.println("Detenerse2222222222222222222");
 }
 void MoverAtras(){
 
   digitalWrite(motor2In1Pin, LOW);
   digitalWrite(motor2In2Pin, HIGH);
-  analogWrite(motor2EnablePin, 150);
+  analogWrite(motor2EnablePin, 254);
 
   digitalWrite(motorIn1Pin, LOW);
   digitalWrite(motorIn2Pin, HIGH);
-  analogWrite(motorEnablePin, 150);
+  analogWrite(motorEnablePin, 254);
 
   digitalWrite(motor3In1Pin, HIGH);
   digitalWrite(motor3In2Pin, LOW);
-  analogWrite(motor3EnablePin, 150);
+  analogWrite(motor3EnablePin, 254);
 
   digitalWrite(motor4In1Pin, HIGH);
   digitalWrite(motor4In2Pin, LOW);
-  analogWrite(motor4EnablePin, 150);
+  analogWrite(motor4EnablePin, 254);
 
   delay(345); // Esperar 1 segundo antes de detener el motor
   analogWrite(motor2EnablePin, 0);
@@ -98,19 +97,19 @@ void GirarIzq(){
 
   digitalWrite(motor2In1Pin, LOW);
   digitalWrite(motor2In2Pin, HIGH);
-  analogWrite(motor2EnablePin, 150);
+  analogWrite(motor2EnablePin, 254);
 
   digitalWrite(motorIn1Pin, LOW);
   digitalWrite(motorIn2Pin, HIGH);
-  analogWrite(motorEnablePin, 150);
+  analogWrite(motorEnablePin, 254);
 
   digitalWrite(motor3In1Pin, LOW);
   digitalWrite(motor3In2Pin, HIGH);
-  analogWrite(motor3EnablePin, 150);
+  analogWrite(motor3EnablePin, 254);
 
   digitalWrite(motor4In1Pin, LOW);
   digitalWrite(motor4In2Pin, HIGH);
-  analogWrite(motor4EnablePin, 150);
+  analogWrite(motor4EnablePin, 254);
 
   delay(345); // Esperar 1 segundo antes de detener el motor
   analogWrite(motor2EnablePin, 0);
@@ -123,19 +122,19 @@ void GirarDer(){
 
   digitalWrite(motor2In1Pin, HIGH);
   digitalWrite(motor2In2Pin, LOW);
-  analogWrite(motor2EnablePin, 150);
+  analogWrite(motor2EnablePin, 254);
 
   digitalWrite(motorIn1Pin, HIGH);
   digitalWrite(motorIn2Pin, LOW);
-  analogWrite(motorEnablePin, 150);
+  analogWrite(motorEnablePin, 254);
 
   digitalWrite(motor3In1Pin, HIGH);
   digitalWrite(motor3In2Pin, LOW);
-  analogWrite(motor3EnablePin, 150);
+  analogWrite(motor3EnablePin, 254);
 
   digitalWrite(motor4In1Pin, HIGH);
   digitalWrite(motor4In2Pin, LOW);
-  analogWrite(motor4EnablePin, 150);
+  analogWrite(motor4EnablePin, 254);
 
   delay(345); // Esperar 1 segundo antes de detener el motor
   analogWrite(motor2EnablePin, 0);
@@ -169,27 +168,33 @@ void loop() {
       VaciarBuffer();
       }
     }
-
+  }
+  if (data ==2){  
+      while(data ==2){
+      MoverAtras();
+      if (Serial.available() > 0) {
+      data = Serial.parseInt(); // Guardar el último comando
+      VaciarBuffer();
+      }
+    }
+  }
+  if (data ==3){
+      while(data ==3){
+      GirarIzq();
+      if (Serial.available() > 0) {
+      data = Serial.parseInt(); // Guardar el último comando
+      VaciarBuffer();
+      }
+    }
+  }
+  if (data ==4){
+      while(data ==4){
+      GirarDer();
+      if (Serial.available() > 0) {
+      data = Serial.parseInt(); // Guardar el último comando
+      VaciarBuffer();
+      }
+    }
   }
   
-  /*
-  // Ejecutar acciones basándose en el último comando recibido
-  if (data == 'w') {
-    data='w';
-    Serial.println("moviendo hacia adelante");
-    MoverAdelante();
-    Serial.println("Detenerse");
-  } else if (data == 's') {
-    MoverAtras();
-    Serial.println("moviendo hacia atras");
-  } else if (data == 'a') {
-    GirarIzq();
-    Serial.println("Girando a la izquierda");
-  } else if (data == 'd') {
-    Serial.println("Girando a la derecha");
-    GirarDer();
-
-  } 
-  Serial.println(data);*/
-
 }

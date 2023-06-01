@@ -2,7 +2,7 @@
 
 import numpy as np
 import rclpy
-from geometry_msgs.msg import Vector3
+from std_msgs.msg import String
 from pynput import keyboard
 from rclpy.node import Node
 from PIL import ImageTk, Image
@@ -16,11 +16,11 @@ class Publicador(Node):
 
     def __init__(self):
         super().__init__('manipulator')
-        self.publisher_ = self.create_publisher(Vector3, 'manipulator_ang', 10)
+        self.publisher_ = self.create_publisher(String, 'manipulator_ang', 10)
         timer_period = 1  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
-        self.movement = Vector3()
+        self.movement = String()
         self.presionado=False
         #por defecto la velocidades son 1 
         self.angular_value = 1.0
@@ -108,98 +108,98 @@ class Publicador(Node):
         
     def open_grip(self):
         button=self.z_button
-        self.movement= self.linear_value
+        self.movement.data = "z"
         print(self.movement)
         self.publisher_.publish(self.movement)
         button.configure(bg='#FFA500')
 
     def close_grip(self):
         button=self.x_button
-        self.movement.linear.x = -(self.linear_value)
+        self.movement.data = "x"
         self.publisher_.publish(self.movement)
         button.configure(bg='#FFA500')
 
     def antarm_forward(self):
         button=self.y_button
-        self.movement.linear.y = self.linear_value
+        self.movement.data = "y"
         self.publisher_.publish(self.movement)
         button.configure(bg='#FFA500')
 
     def antarm_backward(self):
         button=self.u_button
-        self.movement.linear.y =  -self.linear_value
+        self.movement.data = "u"
         self.publisher_.publish(self.movement)
         button.configure(bg='#FFA500')
         
     def arm_forward(self):
         button=self.h_button
-        self.movement.linear.y = self.linear_value
+        self.movement.data = "h"
         self.publisher_.publish(self.movement)
         button.configure(bg='#FFA500')
 
     def arm_backward(self):
         button=self.j_button
-        self.movement.linear.y =  -self.linear_value
+        self.movement.data = "j"
         self.publisher_.publish(self.movement)
         button.configure(bg='#FFA500')    
         
     def base_left(self):
         button=self.n_button
-        self.movement.linear.y = self.linear_value
+        self.movement.data = "n"
         self.publisher_.publish(self.movement)
         button.configure(bg='#FFA500')
 
     def base_right(self):
         button=self.m_button
-        self.movement.linear.y =  -self.linear_value
+        self.movement.data = "m"
         self.publisher_.publish(self.movement)
         button.configure(bg='#FFA500')
     
     def unopen_grip(self):
         button=self.z_button
-        self.movement.linear.x = 0.0
+        self.movement.data = "0.0"
         self.publisher_.publish(self.movement)
         button.configure(bg='#191970')
 
     def unclose_grip(self):
         button=self.x_button
-        self.movement.linear.x = 0.0
+        self.movement.data = "0.0"
         self.publisher_.publish(self.movement)
         button.configure(bg='#191970')
 
     def antarm_unforward(self):
         button=self.y_button
-        self.movement.linear.y  = 0.0
+        self.movement.data = "0.0"
         self.publisher_.publish(self.movement)
         button.configure(bg='#191970')
 
     def antarm_unbackward(self):
         button=self.u_button
-        self.movement.linear.y  = 0.0
+        self.movement.data = "0.0"
         self.publisher_.publish(self.movement)
         button.configure(bg='#191970')
         
     def arm_unforward(self):
         button=self.h_button
-        self.movement.linear.y  = 0.0
+        self.movement.data = "0.0"
         self.publisher_.publish(self.movement)
         button.configure(bg='#191970')
 
     def arm_unbackward(self):
         button=self.j_button
-        self.movement.linear.y  = 0.0
+        self.movement.data = "0.0"
         self.publisher_.publish(self.movement)
         button.configure(bg='#191970')
         
     def base_unleft(self):
         button=self.n_button
-        self.movement.linear.y  = 0.0
+        self.movement.data = "0.0"
         self.publisher_.publish(self.movement)
         button.configure(bg='#191970')
 
     def base_unright(self):
         button=self.m_button
-        self.movement.linear.y  = 0.0
+        self.movement.data = "0.0"
         self.publisher_.publish(self.movement)
         button.configure(bg='#191970')
 
@@ -220,15 +220,15 @@ class Publicador(Node):
             elif key.char == 'y'and (not self.presionado):
                 self.presionado=True
                 self.antarm_forward()
-            elif key.char == 'u'and (not self.presionado):
-                self.antarm_backward=True
-                self.right()
+            elif key.char == 'u' and (not self.presionado):
+                self.presionado=True
+                self.antarm_backward()
             elif key.char == 'h'and (not self.presionado):
                 self.presionado=True
                 self.arm_forward()
             elif key.char == 'j'and (not self.presionado):
-                self.arm_backward=True
-                self.left()
+                self.presionado=True
+                self.arm_backward()
             elif key.char == 'n'and (not self.presionado):
                 self.presionado=True
                 self.base_left()

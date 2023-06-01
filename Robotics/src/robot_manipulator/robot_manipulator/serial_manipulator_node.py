@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import Vector3
+from std_msgs.msg import String
 import serial
 import time  # Importa la librería time
 from std_msgs.msg import String
@@ -20,7 +20,7 @@ class SerialTester(Node):
 
         # Crear un subscriptor al tópico "robot_cmdVel"
         self.subscription = self.create_subscription(
-            Vector3,
+            String,
             'manipulator_ang',
             self.cmd_vel_callback,
             10)

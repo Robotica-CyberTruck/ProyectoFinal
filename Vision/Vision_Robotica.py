@@ -77,10 +77,10 @@ def main(imagen):
   desenfocado = cv2.GaussianBlur(gris, (5, 5), 0)
 
   #Ajusta los parámetros de umbralización
-  thresh = cv2.adaptiveThreshold(desenfocado, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 13, 3.5)
+  #thresh = cv2.adaptiveThreshold(desenfocado, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 51, 4)
   
   # Aplicar el filtro de umbralización de Otsu
-  #_, thresh = cv2.threshold(desenfocado, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+  _, thresh = cv2.threshold(desenfocado, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
 
   cv2.imshow("Thresh", thresh)
 
@@ -229,7 +229,7 @@ def main(imagen):
 #imagen = cv2.imread('banner2.jpg')
 #imagen = cv2.imread('banner_bordeDelgado.jpg')
 #imagen = cv2.imread('/home/daniel/ProyectoFinal/Vision/banner3.jpg')
-imagen = cv2.imread('/home/daniel/ProyectoFinal/Vision/banner2Recortado.jpg')
+imagen = cv2.imread('/home/daniel/ProyectoFinal/Vision/banner2.jpg')
 
 main(imagen)
             

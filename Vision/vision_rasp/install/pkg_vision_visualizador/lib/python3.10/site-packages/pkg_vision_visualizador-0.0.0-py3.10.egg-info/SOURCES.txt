@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/pkg_vision_visualizador/pkg_vision_visualizador.egg-info/PKG-INFO
+../../build/pkg_vision_visualizador/pkg_vision_visualizador.egg-info/SOURCES.txt
+../../build/pkg_vision_visualizador/pkg_vision_visualizador.egg-info/dependency_links.txt
+../../build/pkg_vision_visualizador/pkg_vision_visualizador.egg-info/entry_points.txt
+../../build/pkg_vision_visualizador/pkg_vision_visualizador.egg-info/requires.txt
+../../build/pkg_vision_visualizador/pkg_vision_visualizador.egg-info/top_level.txt
+../../build/pkg_vision_visualizador/pkg_vision_visualizador.egg-info/zip-safe
+pkg_vision_visualizador/__init__.py
+pkg_vision_visualizador/visualizador_camara.py
+resource/pkg_vision_visualizador
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

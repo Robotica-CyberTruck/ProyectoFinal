@@ -1,0 +1,3 @@
+[console_scripts]
+vision_rasp = pkg_vision_rasp.vision_rasp:main
+

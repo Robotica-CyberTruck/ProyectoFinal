@@ -1,0 +1,3 @@
+[console_scripts]
+visualizador_camara = pkg_vision_visualizador.visualizador_camara:main
+

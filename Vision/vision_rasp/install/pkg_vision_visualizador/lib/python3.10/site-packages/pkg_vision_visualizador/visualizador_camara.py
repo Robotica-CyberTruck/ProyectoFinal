@@ -20,12 +20,17 @@ class ImageSubscriber(Node):
             10)
         self.subscription  # prevent unused variable warning
         self.bridge = CvBridge()
+        self.frame_counter = 0  # Iniciar un contador de fotogramas
 
     def image_callback(self, msg):
+
+        self.frame_counter += 1  # Incrementar el contador de fotogramas
         cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
 
-        task_vision(cv_image)
-
+        if self.frame_counter % 3 == 0:  # Solo procesar la imagen cada 3 fotogramas
+            cv_image = task_vision(cv_image)
+        
+        
         cv2.imshow("camera_image", cv_image)
         cv2.waitKey(1)
         
@@ -40,9 +45,9 @@ def task_vision(img):
     bot_rect = [int(width * 0.15), int(height * 0.7), int(width * 0.7), int(height * 0.2)]
 
     # Dibujar los rectángulos
-    #cv2.rectangle(img, (top_rect[0], top_rect[1]), (top_rect[0] + top_rect[2], top_rect[1] + top_rect[3]), (255, 0, 0), 2)
-    #cv2.rectangle(img, (mid_rect[0], mid_rect[1]), (mid_rect[0] + mid_rect[2], mid_rect[1] + mid_rect[3]), (0, 255, 0), 2)
-    #cv2.rectangle(img, (bot_rect[0], bot_rect[1]), (bot_rect[0] + bot_rect[2], bot_rect[1] + bot_rect[3]), (0, 0, 255), 2)
+    cv2.rectangle(img, (top_rect[0], top_rect[1]), (top_rect[0] + top_rect[2], top_rect[1] + top_rect[3]), (255, 0, 0), 2)
+    cv2.rectangle(img, (mid_rect[0], mid_rect[1]), (mid_rect[0] + mid_rect[2], mid_rect[1] + mid_rect[3]), (0, 255, 0), 2)
+    cv2.rectangle(img, (bot_rect[0], bot_rect[1]), (bot_rect[0] + bot_rect[2], bot_rect[1] + bot_rect[3]), (0, 0, 255), 2)
     
 
     # Recortar y guardar las áreas dentro de los rectángulos
@@ -88,7 +93,6 @@ def task_vision(img):
     #Mid
     # Aproximar contorno para reducir el número de puntos a evaluar
     texto = pytesseract.image_to_string(mid_crop, config="--psm 6")
-
     print("Palabra: " + texto)
 
 
@@ -97,6 +101,7 @@ def task_vision(img):
     average_color = np.mean(bot_crop, axis=(0,1))
     print("Color: " + str(average_color))
 
+    return img
 
 
 

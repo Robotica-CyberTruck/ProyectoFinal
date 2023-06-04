@@ -20,12 +20,17 @@ class ImageSubscriber(Node):
             10)
         self.subscription  # prevent unused variable warning
         self.bridge = CvBridge()
+        self.frame_counter = 0  # Iniciar un contador de fotogramas
 
     def image_callback(self, msg):
+
+        self.frame_counter += 1  # Incrementar el contador de fotogramas
         cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
 
-        cv_image = task_vision(cv_image)
-
+        if self.frame_counter % 3 == 0:  # Solo procesar la imagen cada 3 fotogramas
+            cv_image = task_vision(cv_image)
+        
+        
         cv2.imshow("camera_image", cv_image)
         cv2.waitKey(1)
         
@@ -88,7 +93,6 @@ def task_vision(img):
     #Mid
     # Aproximar contorno para reducir el número de puntos a evaluar
     texto = pytesseract.image_to_string(mid_crop, config="--psm 6")
-
     print("Palabra: " + texto)
 
 

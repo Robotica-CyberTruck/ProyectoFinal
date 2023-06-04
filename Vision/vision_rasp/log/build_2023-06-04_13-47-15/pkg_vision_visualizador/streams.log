@@ -1,0 +1,23 @@
+[1.166s] Invoking command in '/home/daniel/ProyectoFinal/Vision/vision_rasp/src/pkg_vision_visualizador': PYTHONPATH=/home/daniel/ProyectoFinal/Vision/vision_rasp/build/pkg_vision_visualizador/prefix_override:/home/daniel/ProyectoFinal/Vision/vision_rasp/install/pkg_vision_visualizador/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pkg_vision_visualizador build --build-base /home/daniel/ProyectoFinal/Vision/vision_rasp/build/pkg_vision_visualizador/build install --record /home/daniel/ProyectoFinal/Vision/vision_rasp/build/pkg_vision_visualizador/install.log --single-version-externally-managed
+[1.495s] running egg_info
+[1.497s] writing ../../build/pkg_vision_visualizador/pkg_vision_visualizador.egg-info/PKG-INFO
+[1.497s] writing dependency_links to ../../build/pkg_vision_visualizador/pkg_vision_visualizador.egg-info/dependency_links.txt
+[1.497s] writing entry points to ../../build/pkg_vision_visualizador/pkg_vision_visualizador.egg-info/entry_points.txt
+[1.497s] writing requirements to ../../build/pkg_vision_visualizador/pkg_vision_visualizador.egg-info/requires.txt
+[1.498s] writing top-level names to ../../build/pkg_vision_visualizador/pkg_vision_visualizador.egg-info/top_level.txt
+[1.503s] reading manifest file '../../build/pkg_vision_visualizador/pkg_vision_visualizador.egg-info/SOURCES.txt'
+[1.505s] writing manifest file '../../build/pkg_vision_visualizador/pkg_vision_visualizador.egg-info/SOURCES.txt'
+[1.505s] running build
+[1.505s] running build_py
+[1.506s] running install
+[1.506s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.506s]   warnings.warn(
+[1.507s] running install_lib
+[1.509s] running install_data
+[1.509s] running install_egg_info
+[1.513s] removing '/home/daniel/ProyectoFinal/Vision/vision_rasp/install/pkg_vision_visualizador/lib/python3.10/site-packages/pkg_vision_visualizador-0.0.0-py3.10.egg-info' (and everything under it)
+[1.513s] Copying ../../build/pkg_vision_visualizador/pkg_vision_visualizador.egg-info to /home/daniel/ProyectoFinal/Vision/vision_rasp/install/pkg_vision_visualizador/lib/python3.10/site-packages/pkg_vision_visualizador-0.0.0-py3.10.egg-info
+[1.514s] running install_scripts
+[1.541s] Installing visualizador_camara script to /home/daniel/ProyectoFinal/Vision/vision_rasp/install/pkg_vision_visualizador/lib/pkg_vision_visualizador
+[1.542s] writing list of installed files to '/home/daniel/ProyectoFinal/Vision/vision_rasp/build/pkg_vision_visualizador/install.log'
+[1.577s] Invoked command in '/home/daniel/ProyectoFinal/Vision/vision_rasp/src/pkg_vision_visualizador' returned '0': PYTHONPATH=/home/daniel/ProyectoFinal/Vision/vision_rasp/build/pkg_vision_visualizador/prefix_override:/home/daniel/ProyectoFinal/Vision/vision_rasp/install/pkg_vision_visualizador/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pkg_vision_visualizador build --build-base /home/daniel/ProyectoFinal/Vision/vision_rasp/build/pkg_vision_visualizador/build install --record /home/daniel/ProyectoFinal/Vision/vision_rasp/build/pkg_vision_visualizador/install.log --single-version-externally-managed

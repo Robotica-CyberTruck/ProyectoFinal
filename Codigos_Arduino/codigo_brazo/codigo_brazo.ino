@@ -66,6 +66,7 @@ void loop()
         angulo1 = max(0, ultimoAngulo1 - 10);
         posicionRequerida1 = true; // Marca la posición requerida
       }
+      //la k y la ipuede que esten invertidos
     } else if (c == 'k') { //Antebrazo rojo
       if (!enMovimiento2) {
         angulo2 = min(360, ultimoAngulo2 + 10);
@@ -77,6 +78,7 @@ void loop()
         posicionRequerida2 = true; // Marca la posición requerida
       }
     }
+    
     else if (c == 'u') { //Brazo
       if (!enMovimiento3) {
         angulo3 = min(360, ultimoAngulo3 + 10);

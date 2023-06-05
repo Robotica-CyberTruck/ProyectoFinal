@@ -37,24 +37,25 @@ class SerialTester(Node):
         elif msg.data == "x":
             self.serial.write(b'x')
             print("x")
-        elif msg.data == "y":
-            self.serial.write(b'y')
-            print("y")
         elif msg.data == "u":
             self.serial.write(b'u')
             print("u")
-        elif msg.data == "h":
-            self.serial.write(b'h')
-            print("h")
+        elif msg.data == "o":
+            self.serial.write(b'o')
+            print("o")
+        elif msg.data == "i":
+            self.serial.write(b'i')
+            print("i")
+        elif msg.data == "k":
+            self.serial.write(b'k')
+            print("k")
         elif msg.data == "j":
             self.serial.write(b'j')
             print("j")
-        elif msg.data == "n":
-            self.serial.write(b'n')
-            print("n")
-        elif msg.data == "m":
-            self.serial.write(b'm')
-            print("m")
+        elif msg.data == "l":
+            self.serial.write(b'l')
+            print("l")
+        
         
         # Lee la respuesta de la ESP32
         response = self.serial.readline().decode('utf-8').rstrip()

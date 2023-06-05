@@ -6,8 +6,8 @@ Servo servo3;
 Servo servo4;
 
 int pin1 = 3; //Base
-int pin2 = 5; //Antebrazo
-int pin3 = 6; //Brazo
+int pin2 = 5; //Brazo 
+int pin3 = 6; //Antebrazo
 int pin4 = 9; //Pinza
 int pulsoMinimo = 580;
 int pulsoMaximo = 2500;
@@ -45,12 +45,12 @@ void loop()
 {
   if (Serial.available()) {
     char c = Serial.read();
-    if (c == 'a') {
+    if (c == 'l') {
       if (!enMovimiento1) {
         angulo1 = min(360, ultimoAngulo1 + 10);
         posicionRequerida1 = true; // Marca la posición requerida
       }
-    } else if (c == 'd') {
+    } else if (c == 'j') {
       if (!enMovimiento1) {
         angulo1 = max(0, ultimoAngulo1 - 10);
         posicionRequerida1 = true; // Marca la posición requerida

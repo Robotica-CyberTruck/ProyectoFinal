@@ -22,9 +22,6 @@ class Publicador(Node):
         self.i = 0
         self.movement = String()
         self.presionado=False
-        #por defecto la velocidades son 1 
-        self.angular_value = 1.0
-        self.linear_value = 1.0
 
         # Crear ventana de tkinter para la interfaz de movimiento
         self.root = tk.Tk()

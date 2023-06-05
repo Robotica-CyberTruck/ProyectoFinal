@@ -35,6 +35,8 @@ class CombinedNode(Node):
         if save_path:
             self.log_file = open(save_path, "w")
         self.file_path_client = self.create_client(SetTrajectoryFile, 'set_trajectory_file')
+        
+        
     def cmd_vel_callback(self, msg):
         linear_x = msg.linear.x
         lateral_y = msg.linear.y
@@ -124,7 +126,7 @@ def main():
         plt.show()
 
         # def on_shutdown():
-        #     if node.save_path:
+        #     if node.save_path:        
         #         node.log_file.close()
 
         #app_window.protocol("WM_DELETE_WINDOW", on_shutdown)

@@ -31,20 +31,31 @@ class SerialTester(Node):
         self.contador += 1  # Incrementa el contador
         start_time = time.time()  # Guarda el tiempo actual
 
-        if msg.linear.x > 0:
-            self.serial.write(b'w')
-            print("w")
-        elif msg.linear.x < 0:
-            self.serial.write(b's')
-            print("s")
-        elif msg.linear.y < 0:
-            self.serial.write(b'a')
-            print("a")
-        elif msg.linear.y > 0:
-            self.serial.write(b'd')
-            print("d")
-        else:
+        if msg.data == "z":
+            self.serial.write(b'z')
+            print("z")
+        elif msg.data == "x":
+            self.serial.write(b'x')
+            print("x")
+        elif msg.data == "y":
+            self.serial.write(b'y')
+            print("y")
+        elif msg.data == "u":
+            self.serial.write(b'u')
+            print("u")
+        elif msg.data == "h":
+            self.serial.write(b'h')
+            print("h")
+        elif msg.data == "j":
+            self.serial.write(b'j')
+            print("j")
+        elif msg.data == "n":
             self.serial.write(b'n')
+            print("n")
+        elif msg.data == "m":
+            self.serial.write(b'm')
+            print("m")
+        
         # Lee la respuesta de la ESP32
         response = self.serial.readline().decode('utf-8').rstrip()
         elapsed_time = time.time() - start_time  # Calcula el tiempo transcurrido

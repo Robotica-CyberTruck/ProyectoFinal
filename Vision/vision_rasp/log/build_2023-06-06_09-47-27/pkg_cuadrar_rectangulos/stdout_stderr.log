@@ -1,0 +1,7 @@
+running egg_info
+writing ../../build/pkg_cuadrar_rectangulos/pkg_vision_visualizador.egg-info/PKG-INFO
+writing dependency_links to ../../build/pkg_cuadrar_rectangulos/pkg_vision_visualizador.egg-info/dependency_links.txt
+writing entry points to ../../build/pkg_cuadrar_rectangulos/pkg_vision_visualizador.egg-info/entry_points.txt
+writing requirements to ../../build/pkg_cuadrar_rectangulos/pkg_vision_visualizador.egg-info/requires.txt
+writing top-level names to ../../build/pkg_cuadrar_rectangulos/pkg_vision_visualizador.egg-info/top_level.txt
+error: package directory 'pkg_vision_visualizador' does not exist

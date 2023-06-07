@@ -1,0 +1,3 @@
+[console_scripts]
+vision_cuadrar_rectangulos = pkg_cuadrar_rectangulos.vision_cuadrar_rectangulos:main
+

@@ -17,7 +17,8 @@ class ImageSubscriber(Node):
             Image,
             'camera_image',
             self.image_callback,
-            10)
+            5)
+        
         self.subscription  # prevent unused variable warning
         self.bridge = CvBridge()
         self.frame_counter = 0  # Iniciar un contador de fotogramas
@@ -40,15 +41,10 @@ def task_vision(img):
     height, width, _ = img.shape
 
     # Definir los rectángulos
-    top_rect = [int(width * 0.15), int(height * 0.06), int(width * 0.7), int(height * 0.32)]
-    mid_rect = [int(width * 0.15), int(height * 0.4), int(width * 0.7), int(height * 0.22)]
-    bot_rect = [int(width * 0.15), int(height * 0.7), int(width * 0.7), int(height * 0.2)]
+    top_rect = [int(width * 0.25), int(height * 0.06), int(width * 0.55), int(height * 0.32)]
+    mid_rect = [int(width * 0.25), int(height * 0.4), int(width * 0.55), int(height * 0.22)]
+    bot_rect = [int(width * 0.25), int(height * 0.7), int(width * 0.55), int(height * 0.2)]
 
-    # Dibujar los rectángulos
-    cv2.rectangle(img, (top_rect[0], top_rect[1]), (top_rect[0] + top_rect[2], top_rect[1] + top_rect[3]), (255, 0, 0), 2)
-    cv2.rectangle(img, (mid_rect[0], mid_rect[1]), (mid_rect[0] + mid_rect[2], mid_rect[1] + mid_rect[3]), (0, 255, 0), 2)
-    cv2.rectangle(img, (bot_rect[0], bot_rect[1]), (bot_rect[0] + bot_rect[2], bot_rect[1] + bot_rect[3]), (0, 0, 255), 2)
-    
 
     # Recortar y guardar las áreas dentro de los rectángulos
     top_crop = img[top_rect[1]:top_rect[1] + top_rect[3], top_rect[0]:top_rect[0] + top_rect[2]]
@@ -70,6 +66,7 @@ def task_vision(img):
  
     #Top 
     # Aproximar contorno para reducir el número de puntos a evaluar
+    top = ""
 
     if len(contornos_top) > 1:
       epsilon = 0.01 * cv2.arcLength(contornos_top[1], True)
@@ -77,31 +74,76 @@ def task_vision(img):
       esquinas = len(approx)
 
       if esquinas == 3:
-        print("triangulo")
+        top = "triangulo"
+
       elif esquinas == 4:
-        print("cuadrado")
+         # Obtén el rectángulo de área mínima que encierra el contorno
+        rect = cv2.minAreaRect(contornos_top[1])
+        _,_,angle = rect
+
+        # En OpenCV, para 'minAreaRect', si el ángulo es menor que -45, 
+        # ajusta el ángulo para que corresponda al ángulo de rotación del rombo
+        if angle < -45:
+          angle += 90
+
+        # Asume que si el ángulo es cercano a 0 o 90, es un cuadrado,
+        # y si es cercano a 45, es un rombo
+        if abs(angle-45) < 10:
+          top = "rombo"
+        else:
+          top = "cuadrado"
+
       elif esquinas == 5:
-        print("pentagono")
-      elif esquinas == 6:
-        print("Hexagono")
-      elif esquinas == 7:
-        print("Heptagono")
-      elif esquinas == 8:
-        print("octagono")
+        top = "pentagono"
+      
 
 
     #Mid
     # Aproximar contorno para reducir el número de puntos a evaluar
-    texto = pytesseract.image_to_string(mid_crop, config="--psm 6")
-    print("Palabra: " + texto)
+    mid = ""
+    mid = pytesseract.image_to_string(mid_crop, config="--psm 6")
+
 
 
     #Bot
     # Obtener el color promedio en la región del contorno
+    bot = ""
     average_color = np.mean(bot_crop, axis=(0,1))
-    print("Color: " + str(average_color))
+    bot = get_color_name(average_color)
+
+    if top == "triangulo" or top == "cuadrado" or top == "pentagono":
+       if len(mid.strip()) != 0:
+          if bot == 'negro' or bot == 'blanco'or bot == 'rojo' or bot == 'verde' or bot == 'azul':
+            # Dibujar los rectángulos
+            cv2.rectangle(img, (top_rect[0], top_rect[1]), (top_rect[0] + top_rect[2], top_rect[1] + top_rect[3]), (255, 0, 0), 2)
+            cv2.rectangle(img, (mid_rect[0], mid_rect[1]), (mid_rect[0] + mid_rect[2], mid_rect[1] + mid_rect[3]), (0, 255, 0), 2)
+            cv2.rectangle(img, (bot_rect[0], bot_rect[1]), (bot_rect[0] + bot_rect[2], bot_rect[1] + bot_rect[3]), (0, 0, 255), 2)
+
+            print("Figura: " + top )
+            print("Palabra: " + mid.strip())
+            print("Color: " + bot + "\n")
+
+    
 
     return img
+
+
+
+
+def get_color_name(rgb):
+    # Convertir el color a espacio HSV
+    hsv = cv2.cvtColor(np.uint8([[rgb]]), cv2.COLOR_RGB2HSV)[0][0]
+
+    if hsv[2] < 20:  # Valor muy bajo, considerar negro
+        return 'negro'
+    elif hsv[1] < 50 and hsv[2] > 200:  # Saturación muy baja, valor muy alto, considerar blanco
+        return 'blanco'
+    elif hsv[0] < 20 or hsv[0] > 160:  # Tono cercano a los extremos del espectro HSV, considerar rojo
+        return 'rojo'
+    elif 20 <= hsv[0] < 70:  # Tono en el rango de los verdes
+        return 'verde'
+    elif 70 <= hsv[0] < 160:  # Tono en el rango de los azules
+        return 'azul'
 
 
 

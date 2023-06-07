@@ -8,15 +8,15 @@ class ImagePublisher(Node):
 
     def __init__(self):
         super().__init__('image_publisher')
-        self.publisher_ = self.create_publisher(Image, 'camera_image', 10)
-        self.timer_period = 0.01  # segundos
+        self.publisher_ = self.create_publisher(Image, 'camera_image', 5)
+        self.timer_period = 0.001  # segundos
         self.timer = self.create_timer(self.timer_period, self.timer_callback)
         self.i = 0
         self.bridge = CvBridge()
         self.cap = cv2.VideoCapture(0)  # Usar el primer dispositivo de cámara
-        self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)  # Ancho de la imagen
-        self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)  # Altura de la imagen
-        self.cap.set(cv2.CAP_PROP_FPS, 30)
+        #self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)  # Ancho de la imagen
+        #self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)  # Altura de la imagen
+        #self.cap.set(cv2.CAP_PROP_FPS, 30)
 
     def timer_callback(self):
         ret, frame = self.cap.read()

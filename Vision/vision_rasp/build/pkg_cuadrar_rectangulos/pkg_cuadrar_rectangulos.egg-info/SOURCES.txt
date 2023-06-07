@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/pkg_cuadrar_rectangulos/pkg_cuadrar_rectangulos.egg-info/PKG-INFO
+../../build/pkg_cuadrar_rectangulos/pkg_cuadrar_rectangulos.egg-info/SOURCES.txt
+../../build/pkg_cuadrar_rectangulos/pkg_cuadrar_rectangulos.egg-info/dependency_links.txt
+../../build/pkg_cuadrar_rectangulos/pkg_cuadrar_rectangulos.egg-info/entry_points.txt
+../../build/pkg_cuadrar_rectangulos/pkg_cuadrar_rectangulos.egg-info/requires.txt
+../../build/pkg_cuadrar_rectangulos/pkg_cuadrar_rectangulos.egg-info/top_level.txt
+../../build/pkg_cuadrar_rectangulos/pkg_cuadrar_rectangulos.egg-info/zip-safe
+pkg_cuadrar_rectangulos/Cuadrar_rectangulos.py
+pkg_cuadrar_rectangulos/__init__.py
+pkg_cuadrar_rectangulos/vision_cuadrar_rectangulos.py
+resource/pkg_cuadrar_rectangulos
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

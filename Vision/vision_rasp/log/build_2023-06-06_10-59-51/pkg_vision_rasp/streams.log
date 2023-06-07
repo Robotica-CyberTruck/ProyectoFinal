@@ -1,0 +1,23 @@
+[2.033s] Invoking command in '/home/daniel/ProyectoFinal/Vision/vision_rasp/src/pkg_vision_rasp': PYTHONPATH=/home/daniel/ProyectoFinal/Vision/vision_rasp/build/pkg_vision_rasp/prefix_override:/home/daniel/ProyectoFinal/Vision/vision_rasp/install/pkg_vision_rasp/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pkg_vision_rasp build --build-base /home/daniel/ProyectoFinal/Vision/vision_rasp/build/pkg_vision_rasp/build install --record /home/daniel/ProyectoFinal/Vision/vision_rasp/build/pkg_vision_rasp/install.log --single-version-externally-managed
+[2.369s] running egg_info
+[2.370s] writing ../../build/pkg_vision_rasp/pkg_vision_rasp.egg-info/PKG-INFO
+[2.374s] writing dependency_links to ../../build/pkg_vision_rasp/pkg_vision_rasp.egg-info/dependency_links.txt
+[2.375s] writing entry points to ../../build/pkg_vision_rasp/pkg_vision_rasp.egg-info/entry_points.txt
+[2.376s] writing requirements to ../../build/pkg_vision_rasp/pkg_vision_rasp.egg-info/requires.txt
+[2.377s] writing top-level names to ../../build/pkg_vision_rasp/pkg_vision_rasp.egg-info/top_level.txt
+[2.418s] reading manifest file '../../build/pkg_vision_rasp/pkg_vision_rasp.egg-info/SOURCES.txt'
+[2.491s] writing manifest file '../../build/pkg_vision_rasp/pkg_vision_rasp.egg-info/SOURCES.txt'
+[2.500s] running build
+[2.501s] running build_py
+[2.513s] running install
+[2.529s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.530s]   warnings.warn(
+[2.530s] running install_lib
+[2.562s] running install_data
+[2.604s] running install_egg_info
+[2.609s] removing '/home/daniel/ProyectoFinal/Vision/vision_rasp/install/pkg_vision_rasp/lib/python3.10/site-packages/pkg_vision_rasp-0.0.0-py3.10.egg-info' (and everything under it)
+[2.610s] Copying ../../build/pkg_vision_rasp/pkg_vision_rasp.egg-info to /home/daniel/ProyectoFinal/Vision/vision_rasp/install/pkg_vision_rasp/lib/python3.10/site-packages/pkg_vision_rasp-0.0.0-py3.10.egg-info
+[2.635s] running install_scripts
+[2.693s] Installing vision_rasp script to /home/daniel/ProyectoFinal/Vision/vision_rasp/install/pkg_vision_rasp/lib/pkg_vision_rasp
+[2.694s] writing list of installed files to '/home/daniel/ProyectoFinal/Vision/vision_rasp/build/pkg_vision_rasp/install.log'
+[2.724s] Invoked command in '/home/daniel/ProyectoFinal/Vision/vision_rasp/src/pkg_vision_rasp' returned '0': PYTHONPATH=/home/daniel/ProyectoFinal/Vision/vision_rasp/build/pkg_vision_rasp/prefix_override:/home/daniel/ProyectoFinal/Vision/vision_rasp/install/pkg_vision_rasp/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pkg_vision_rasp build --build-base /home/daniel/ProyectoFinal/Vision/vision_rasp/build/pkg_vision_rasp/build install --record /home/daniel/ProyectoFinal/Vision/vision_rasp/build/pkg_vision_rasp/install.log --single-version-externally-managed

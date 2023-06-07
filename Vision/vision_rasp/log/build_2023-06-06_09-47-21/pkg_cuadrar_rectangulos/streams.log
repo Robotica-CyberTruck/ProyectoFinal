@@ -1,0 +1,11 @@
+[0.983s] Invoking command in '/home/daniel/ProyectoFinal/Vision/vision_rasp/src/pkg_cuadrar_rectangulos': PYTHONPATH=/home/daniel/ProyectoFinal/Vision/vision_rasp/build/pkg_cuadrar_rectangulos/prefix_override:/home/daniel/ProyectoFinal/Vision/vision_rasp/install/pkg_cuadrar_rectangulos/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pkg_cuadrar_rectangulos build --build-base /home/daniel/ProyectoFinal/Vision/vision_rasp/build/pkg_cuadrar_rectangulos/build install --record /home/daniel/ProyectoFinal/Vision/vision_rasp/build/pkg_cuadrar_rectangulos/install.log --single-version-externally-managed
+[1.208s] running egg_info
+[1.208s] creating ../../build/pkg_cuadrar_rectangulos/pkg_vision_visualizador.egg-info
+[1.209s] writing ../../build/pkg_cuadrar_rectangulos/pkg_vision_visualizador.egg-info/PKG-INFO
+[1.209s] writing dependency_links to ../../build/pkg_cuadrar_rectangulos/pkg_vision_visualizador.egg-info/dependency_links.txt
+[1.209s] writing entry points to ../../build/pkg_cuadrar_rectangulos/pkg_vision_visualizador.egg-info/entry_points.txt
+[1.209s] writing requirements to ../../build/pkg_cuadrar_rectangulos/pkg_vision_visualizador.egg-info/requires.txt
+[1.209s] writing top-level names to ../../build/pkg_cuadrar_rectangulos/pkg_vision_visualizador.egg-info/top_level.txt
+[1.211s] writing manifest file '../../build/pkg_cuadrar_rectangulos/pkg_vision_visualizador.egg-info/SOURCES.txt'
+[1.212s] error: package directory 'pkg_vision_visualizador' does not exist
+[1.235s] Invoked command in '/home/daniel/ProyectoFinal/Vision/vision_rasp/src/pkg_cuadrar_rectangulos' returned '1': PYTHONPATH=/home/daniel/ProyectoFinal/Vision/vision_rasp/build/pkg_cuadrar_rectangulos/prefix_override:/home/daniel/ProyectoFinal/Vision/vision_rasp/install/pkg_cuadrar_rectangulos/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pkg_cuadrar_rectangulos build --build-base /home/daniel/ProyectoFinal/Vision/vision_rasp/build/pkg_cuadrar_rectangulos/build install --record /home/daniel/ProyectoFinal/Vision/vision_rasp/build/pkg_cuadrar_rectangulos/install.log --single-version-externally-managed
